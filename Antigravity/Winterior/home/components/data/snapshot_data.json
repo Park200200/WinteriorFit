@@ -1,0 +1,4718 @@
+{
+  "root": {
+    "id": "root",
+    "parentId": null,
+    "type": "ROOT",
+    "label": "표준상품",
+    "isExpanded": true,
+    "childrenIds": [
+      "cat-blind",
+      "cat-curtain"
+    ]
+  },
+  "cat-blind": {
+    "id": "cat-blind",
+    "parentId": "root",
+    "type": "CATEGORY",
+    "label": "블라인드",
+    "isExpanded": true,
+    "childrenIds": [
+      "sub-wood",
+      "sub-roll",
+      "sub-combi",
+      "sub-honeycomb"
+    ]
+  },
+  "cat-curtain": {
+    "id": "cat-curtain",
+    "parentId": "root",
+    "type": "CATEGORY",
+    "label": "커튼",
+    "isExpanded": true,
+    "childrenIds": [
+      "sub-memory",
+      "node-1768353677795",
+      "node-1769993276047"
+    ]
+  },
+  "sub-wood": {
+    "id": "sub-wood",
+    "parentId": "cat-blind",
+    "type": "CATEGORY",
+    "label": "우드",
+    "isExpanded": true,
+    "childrenIds": [
+      "size-25",
+      "size-35",
+      "size-55"
+    ]
+  },
+  "sub-roll": {
+    "id": "sub-roll",
+    "parentId": "cat-blind",
+    "type": "CATEGORY",
+    "label": "롤",
+    "isExpanded": false,
+    "childrenIds": [
+      "prod-roll-basic",
+      "prod-roll-blackout"
+    ]
+  },
+  "sub-combi": {
+    "id": "sub-combi",
+    "parentId": "cat-blind",
+    "type": "CATEGORY",
+    "label": "콤비",
+    "isExpanded": true,
+    "childrenIds": [
+      "prod-combi-basic",
+      "node-1768352478788"
+    ]
+  },
+  "sub-honeycomb": {
+    "id": "sub-honeycomb",
+    "parentId": "cat-blind",
+    "type": "CATEGORY",
+    "label": "허니콤",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768352618881",
+      "node-1768352627267"
+    ]
+  },
+  "sub-memory": {
+    "id": "sub-memory",
+    "parentId": "cat-curtain",
+    "type": "CATEGORY",
+    "label": "속커튼",
+    "isExpanded": true,
+    "childrenIds": [
+      "prod-std-curtain",
+      "node-1768353947168",
+      "node-1768353953653"
+    ]
+  },
+  "prod-std-curtain": {
+    "id": "prod-std-curtain",
+    "parentId": "sub-memory",
+    "type": "DATA",
+    "label": "쉬폰",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768354769996",
+      "node-1769237453062",
+      "node-1769237458620"
+    ],
+    "attributes": {}
+  },
+  "size-25": {
+    "id": "size-25",
+    "parentId": "sub-wood",
+    "type": "CATEGORY",
+    "label": "25mm",
+    "isExpanded": true,
+    "childrenIds": [
+      "prod-pine",
+      "prod-bamboo",
+      "prod-paulownia",
+      "prod-woodchip"
+    ]
+  },
+  "size-35": {
+    "id": "size-35",
+    "parentId": "sub-wood",
+    "type": "CATEGORY",
+    "label": "35mm",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768353464217",
+      "node-1768353471025",
+      "node-1768353483104",
+      "node-1770157206677",
+      "node-1770157213731",
+      "node-1770157219048"
+    ]
+  },
+  "size-55": {
+    "id": "size-55",
+    "parentId": "sub-wood",
+    "type": "CATEGORY",
+    "label": "55mm",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768353492082",
+      "node-1768353499080",
+      "node-1768353507081",
+      "node-1770157226954",
+      "node-1770157233148",
+      "node-1770157241872"
+    ]
+  },
+  "prod-pine": {
+    "id": "prod-pine",
+    "parentId": "size-25",
+    "type": "DATA",
+    "label": "소나무",
+    "isExpanded": true,
+    "childrenIds": [
+      "opt-black",
+      "opt-white",
+      "opt-ivory"
+    ],
+    "attributes": {
+      "product": "Pine"
+    }
+  },
+  "prod-bamboo": {
+    "id": "prod-bamboo",
+    "parentId": "size-25",
+    "type": "DATA",
+    "label": "대나무",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768353306988",
+      "node-1768353314350",
+      "node-1768353321484",
+      "node-1768353369893"
+    ]
+  },
+  "prod-paulownia": {
+    "id": "prod-paulownia",
+    "parentId": "size-25",
+    "type": "DATA",
+    "label": "오동나무",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768353374519",
+      "node-1768353378156",
+      "node-1768353381125"
+    ]
+  },
+  "prod-woodchip": {
+    "id": "prod-woodchip",
+    "parentId": "size-25",
+    "type": "DATA",
+    "label": "우드칩",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768353446213",
+      "node-1768353449902",
+      "node-1768353453529"
+    ]
+  },
+  "prod-roll-basic": {
+    "id": "prod-roll-basic",
+    "parentId": "sub-roll",
+    "type": "DATA",
+    "label": "일반",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768352207184",
+      "node-1768352223137",
+      "node-1768352228611",
+      "node-1768352236871"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "spec_cards": "[{\"id\":\"sp-r1\",\"title\":\"원단소재\",\"content\":\"Polyester 100% / 친환경 무독성 코팅\"},{\"id\":\"sp-r2\",\"title\":\"기능성\",\"content\":\"자외선 차단 90% 이상, 생활 방수 및 방오 가공\"},{\"id\":\"sp-r3\",\"title\":\"원단폭\",\"content\":\"200cm / 240cm / 280cm (광폭 지원)\"},{\"id\":\"sp-r4\",\"title\":\"관리방법\",\"content\":\"마른 걸레나 먼지떨이로 가볍게 먼지 제거 (세탁 불가)\"}]",
+      "style_cards": "[{\"id\":\"st-r1\",\"name\":\"모던 오피스\",\"imageUrl\":\"https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Modern office with clean white roll screens\",\"videoPrompt\":\"Sunlight filtering through roll screen in office\"},{\"id\":\"st-r2\",\"name\":\"심플 리빙\",\"imageUrl\":\"https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Minimalist living room with beige roll blinds\",\"videoPrompt\":\"Slow pan of living room window\"}]"
+    }
+  },
+  "prod-roll-blackout": {
+    "id": "prod-roll-blackout",
+    "parentId": "sub-roll",
+    "type": "DATA",
+    "label": "암막",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768352243377",
+      "node-1768352247189",
+      "node-1768352262610"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "spec_cards": "[{\"id\":\"sp-rb1\",\"title\":\"암막률\",\"content\":\"99.9% 완벽 암막 (Blackout Coating)\"},{\"id\":\"sp-rb2\",\"title\":\"단열효과\",\"content\":\"여름철 열기 차단 및 겨울철 냉기 차단 효과 우수\"},{\"id\":\"sp-rb3\",\"title\":\"소재\",\"content\":\"Polyester 100% + 3 Pass Foam Coating\"},{\"id\":\"sp-rb4\",\"title\":\"용도\",\"content\":\"침실, 회의실, 시청각실 등 빛 차단이 필요한 공간\"}]",
+      "style_cards": "[{\"id\":\"st-rb1\",\"name\":\"호텔식 침실\",\"imageUrl\":\"https://images.unsplash.com/photo-1616594039964-40891a9046c9?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Dark cozy bedroom with blackout blinds\",\"videoPrompt\":\"Morning light blocked by blinds\"},{\"id\":\"st-rb2\",\"name\":\"홈 시네마\",\"imageUrl\":\"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Dark room with projector and blackout screens\",\"videoPrompt\":\"Dimming lights in media room\"}]"
+    }
+  },
+  "prod-combi-basic": {
+    "id": "prod-combi-basic",
+    "parentId": "sub-combi",
+    "type": "DATA",
+    "label": "일반콤비",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768352517295",
+      "node-1768352551607",
+      "node-1768352563937",
+      "node-1768352573545"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "spec_cards": "[{\"id\":\"sp-c1\",\"title\":\"구조\",\"content\":\"75mm 솔리드 + 50mm 쉬어망사 교차 이중 구조\"},{\"id\":\"sp-c2\",\"title\":\"소재\",\"content\":\"High Quality Polyester 100%\"},{\"id\":\"sp-c3\",\"title\":\"특징\",\"content\":\"채광 조절 용이, 통기성 우수, 사생활 보호 효과\"},{\"id\":\"sp-c4\",\"title\":\"원산지\",\"content\":\"대한민국 (Made in Korea)\"}]",
+      "style_cards": "[{\"id\":\"st-c1\",\"name\":\"내추럴 우드톤\",\"imageUrl\":\"https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Natural wood tone combi blinds in living room\",\"videoPrompt\":\"Adjusting combi blinds open and close\"},{\"id\":\"st-c2\",\"name\":\"화사한 다이닝\",\"imageUrl\":\"https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Bright dining room with white combi blinds\",\"videoPrompt\":\"Sunlight patterns through combi blinds\"}]"
+    }
+  },
+  "opt-black": {
+    "id": "opt-black",
+    "parentId": "prod-pine",
+    "type": "DATA",
+    "label": "블랙",
+    "isExpanded": false,
+    "childrenIds": [],
+    "attributes": {
+      "color": "#000000",
+      "nodeType": "color"
+    }
+  },
+  "opt-white": {
+    "id": "opt-white",
+    "parentId": "prod-pine",
+    "type": "DATA",
+    "label": "화이트",
+    "isExpanded": false,
+    "childrenIds": [],
+    "attributes": {
+      "color": "#FFFFFF",
+      "nodeType": "color"
+    }
+  },
+  "opt-ivory": {
+    "id": "opt-ivory",
+    "parentId": "prod-pine",
+    "type": "DATA",
+    "label": "아이보리",
+    "isExpanded": false,
+    "childrenIds": [],
+    "attributes": {
+      "color": "#FFFFF0",
+      "nodeType": "color"
+    }
+  },
+  "root-1768350630954": {
+    "id": "root-1768350630954",
+    "parentId": null,
+    "type": "ROOT",
+    "label": "세탁접수",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768351982172",
+      "node-1768352000850",
+      "node-1768352021870"
+    ],
+    "attributes": {
+      "nodeType": "root"
+    }
+  },
+  "root-1768350652484": {
+    "id": "root-1768350652484",
+    "parentId": null,
+    "type": "ROOT",
+    "label": "무료실측",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768350680564",
+      "node-1768350943343",
+      "node-1768351324318",
+      "node-1768351455282",
+      "node-1768351677980",
+      "node-1768351821713"
+    ],
+    "attributes": {
+      "nodeType": "root"
+    }
+  },
+  "node-1768350680564": {
+    "id": "node-1768350680564",
+    "parentId": "root-1768350652484",
+    "type": "CATEGORY",
+    "label": "주거",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768350760184",
+      "node-1768350768983",
+      "node-1768350777035",
+      "node-1768350787652",
+      "node-1768350797752",
+      "node-1768350805556"
+    ],
+    "attributes": {
+      "nodeType": "option"
+    }
+  },
+  "node-1768350760184": {
+    "id": "node-1768350760184",
+    "parentId": "node-1768350680564",
+    "type": "DATA",
+    "label": "아파트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768350768983": {
+    "id": "node-1768350768983",
+    "parentId": "node-1768350680564",
+    "type": "DATA",
+    "label": "사무실",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768350777035": {
+    "id": "node-1768350777035",
+    "parentId": "node-1768350680564",
+    "type": "DATA",
+    "label": "빌라",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768350787652": {
+    "id": "node-1768350787652",
+    "parentId": "node-1768350680564",
+    "type": "DATA",
+    "label": "단독주택",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768350797752": {
+    "id": "node-1768350797752",
+    "parentId": "node-1768350680564",
+    "type": "DATA",
+    "label": "팬션",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768350805556": {
+    "id": "node-1768350805556",
+    "parentId": "node-1768350680564",
+    "type": "DATA",
+    "label": "호텔",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768350943343": {
+    "id": "node-1768350943343",
+    "parentId": "root-1768350652484",
+    "type": "DATA",
+    "label": "상품",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768350953477",
+      "node-1768350959646",
+      "node-1768350965516",
+      "node-1768350977353"
+    ],
+    "attributes": {
+      "nodeType": "option"
+    }
+  },
+  "node-1768350953477": {
+    "id": "node-1768350953477",
+    "parentId": "node-1768350943343",
+    "type": "DATA",
+    "label": "블라인드",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768350959646": {
+    "id": "node-1768350959646",
+    "parentId": "node-1768350943343",
+    "type": "DATA",
+    "label": "커튼",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768350965516": {
+    "id": "node-1768350965516",
+    "parentId": "node-1768350943343",
+    "type": "DATA",
+    "label": "자바라",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768350977353": {
+    "id": "node-1768350977353",
+    "parentId": "node-1768350943343",
+    "type": "DATA",
+    "label": "폴딩도어",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768351324318": {
+    "id": "node-1768351324318",
+    "parentId": "root-1768350652484",
+    "type": "DATA",
+    "label": "층간연결시공",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768351411575",
+      "node-1768351418253"
+    ],
+    "attributes": {
+      "nodeType": "option"
+    }
+  },
+  "node-1768351411575": {
+    "id": "node-1768351411575",
+    "parentId": "node-1768351324318",
+    "type": "DATA",
+    "label": "예",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768351418253": {
+    "id": "node-1768351418253",
+    "parentId": "node-1768351324318",
+    "type": "DATA",
+    "label": "아니요",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768351455282": {
+    "id": "node-1768351455282",
+    "parentId": "root-1768350652484",
+    "type": "DATA",
+    "label": "서비스종류",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768351484799",
+      "node-1768351504828",
+      "node-1768351526175",
+      "node-1768351532534",
+      "node-1768351537877"
+    ],
+    "attributes": {
+      "nodeType": "option"
+    }
+  },
+  "node-1768351484799": {
+    "id": "node-1768351484799",
+    "parentId": "node-1768351455282",
+    "type": "DATA",
+    "label": "맞춤제작",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768351504828": {
+    "id": "node-1768351504828",
+    "parentId": "node-1768351455282",
+    "type": "DATA",
+    "label": "맞품제작 및 시공",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768351526175": {
+    "id": "node-1768351526175",
+    "parentId": "node-1768351455282",
+    "type": "DATA",
+    "label": "시공",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768351532534": {
+    "id": "node-1768351532534",
+    "parentId": "node-1768351455282",
+    "type": "DATA",
+    "label": "수리",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768351537877": {
+    "id": "node-1768351537877",
+    "parentId": "node-1768351455282",
+    "type": "DATA",
+    "label": "기타",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768351677980": {
+    "id": "node-1768351677980",
+    "parentId": "root-1768350652484",
+    "type": "DATA",
+    "label": "지역선택",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "option"
+    }
+  },
+  "node-1768351821713": {
+    "id": "node-1768351821713",
+    "parentId": "root-1768350652484",
+    "type": "DATA",
+    "label": "고객연락처",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768351833799",
+      "node-1768351844767",
+      "node-1768351853808"
+    ],
+    "attributes": {
+      "nodeType": "option"
+    }
+  },
+  "node-1768351833799": {
+    "id": "node-1768351833799",
+    "parentId": "node-1768351821713",
+    "type": "DATA",
+    "label": "성함",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768351844767": {
+    "id": "node-1768351844767",
+    "parentId": "node-1768351821713",
+    "type": "DATA",
+    "label": "지역",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768351853808": {
+    "id": "node-1768351853808",
+    "parentId": "node-1768351821713",
+    "type": "DATA",
+    "label": "연락번호",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "type-1768350738452"
+    }
+  },
+  "node-1768351982172": {
+    "id": "node-1768351982172",
+    "parentId": "root-1768350630954",
+    "type": "DATA",
+    "label": "원단종류선택",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "option"
+    }
+  },
+  "node-1768352000850": {
+    "id": "node-1768352000850",
+    "parentId": "root-1768350630954",
+    "type": "DATA",
+    "label": "원단사이즈",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "option"
+    }
+  },
+  "node-1768352021870": {
+    "id": "node-1768352021870",
+    "parentId": "root-1768350630954",
+    "type": "DATA",
+    "label": "고객연락처",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "option"
+    }
+  },
+  "node-1768352207184": {
+    "id": "node-1768352207184",
+    "parentId": "prod-roll-basic",
+    "type": "DATA",
+    "label": "시드니",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768352277588",
+      "node-1768352282732",
+      "node-1768352287106",
+      "node-1768352291033"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352223137": {
+    "id": "node-1768352223137",
+    "parentId": "prod-roll-basic",
+    "type": "DATA",
+    "label": "방콕",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768352296168",
+      "node-1768352301617",
+      "node-1768352307504",
+      "node-1768352312130"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352228611": {
+    "id": "node-1768352228611",
+    "parentId": "prod-roll-basic",
+    "type": "DATA",
+    "label": "파리",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768352383651",
+      "node-1768352387624",
+      "node-1768352392418",
+      "node-1768352399390"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352236871": {
+    "id": "node-1768352236871",
+    "parentId": "prod-roll-basic",
+    "type": "DATA",
+    "label": "런던",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768352407462",
+      "node-1768352412274",
+      "node-1768352415251",
+      "node-1768352418436"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352243377": {
+    "id": "node-1768352243377",
+    "parentId": "prod-roll-blackout",
+    "type": "DATA",
+    "label": "홍콩",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768352425910",
+      "node-1768352431033",
+      "node-1768352434022"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352247189": {
+    "id": "node-1768352247189",
+    "parentId": "prod-roll-blackout",
+    "type": "DATA",
+    "label": "두바이",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768352437811",
+      "node-1768352441212",
+      "node-1768352445924",
+      "node-1768352448934"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352262610": {
+    "id": "node-1768352262610",
+    "parentId": "prod-roll-blackout",
+    "type": "DATA",
+    "label": "바르셀로나",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768352452647",
+      "node-1768352457895",
+      "node-1768352461122"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352277588": {
+    "id": "node-1768352277588",
+    "parentId": "node-1768352207184",
+    "type": "DATA",
+    "label": "아이보리",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352282732": {
+    "id": "node-1768352282732",
+    "parentId": "node-1768352207184",
+    "type": "DATA",
+    "label": "버건디",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352287106": {
+    "id": "node-1768352287106",
+    "parentId": "node-1768352207184",
+    "type": "DATA",
+    "label": "라벤더",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352291033": {
+    "id": "node-1768352291033",
+    "parentId": "node-1768352207184",
+    "type": "DATA",
+    "label": "베이지",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352296168": {
+    "id": "node-1768352296168",
+    "parentId": "node-1768352223137",
+    "type": "DATA",
+    "label": "차콜",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352301617": {
+    "id": "node-1768352301617",
+    "parentId": "node-1768352223137",
+    "type": "DATA",
+    "label": "버건디",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352307504": {
+    "id": "node-1768352307504",
+    "parentId": "node-1768352223137",
+    "type": "DATA",
+    "label": "민트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352312130": {
+    "id": "node-1768352312130",
+    "parentId": "node-1768352223137",
+    "type": "DATA",
+    "label": "스카이블루",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352383651": {
+    "id": "node-1768352383651",
+    "parentId": "node-1768352228611",
+    "type": "DATA",
+    "label": "아이보리",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352387624": {
+    "id": "node-1768352387624",
+    "parentId": "node-1768352228611",
+    "type": "DATA",
+    "label": "라벤더",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352392418": {
+    "id": "node-1768352392418",
+    "parentId": "node-1768352228611",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352399390": {
+    "id": "node-1768352399390",
+    "parentId": "node-1768352228611",
+    "type": "DATA",
+    "label": "라벤더",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352407462": {
+    "id": "node-1768352407462",
+    "parentId": "node-1768352236871",
+    "type": "DATA",
+    "label": "피치",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352412274": {
+    "id": "node-1768352412274",
+    "parentId": "node-1768352236871",
+    "type": "DATA",
+    "label": "화이트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352415251": {
+    "id": "node-1768352415251",
+    "parentId": "node-1768352236871",
+    "type": "DATA",
+    "label": "그레이",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352418436": {
+    "id": "node-1768352418436",
+    "parentId": "node-1768352236871",
+    "type": "DATA",
+    "label": "민트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352425910": {
+    "id": "node-1768352425910",
+    "parentId": "node-1768352243377",
+    "type": "DATA",
+    "label": "버건디",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352431033": {
+    "id": "node-1768352431033",
+    "parentId": "node-1768352243377",
+    "type": "DATA",
+    "label": "차콜",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352434022": {
+    "id": "node-1768352434022",
+    "parentId": "node-1768352243377",
+    "type": "DATA",
+    "label": "베이지",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352437811": {
+    "id": "node-1768352437811",
+    "parentId": "node-1768352247189",
+    "type": "DATA",
+    "label": "피치",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352441212": {
+    "id": "node-1768352441212",
+    "parentId": "node-1768352247189",
+    "type": "DATA",
+    "label": "화이트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352445924": {
+    "id": "node-1768352445924",
+    "parentId": "node-1768352247189",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352448934": {
+    "id": "node-1768352448934",
+    "parentId": "node-1768352247189",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352452647": {
+    "id": "node-1768352452647",
+    "parentId": "node-1768352262610",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352457895": {
+    "id": "node-1768352457895",
+    "parentId": "node-1768352262610",
+    "type": "DATA",
+    "label": "블랙",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352461122": {
+    "id": "node-1768352461122",
+    "parentId": "node-1768352262610",
+    "type": "DATA",
+    "label": "차콜",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768352478788": {
+    "id": "node-1768352478788",
+    "parentId": "sub-combi",
+    "type": "DATA",
+    "label": "암막콤비",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768352591046",
+      "node-1768352598781",
+      "node-1768352603519"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "spec_cards": "[{\"id\":\"sp-cb1\",\"title\":\"기능\",\"content\":\"암막 기능이 추가된 콤비 블라인드 (암막률 90%)\"},{\"id\":\"sp-cb2\",\"title\":\"구조\",\"content\":\"암막 원단과 촘촘한 망사의 이중 교차\"},{\"id\":\"sp-cb3\",\"title\":\"디자인\",\"content\":\"고급스러운 텍스처와 깊이감 있는 컬러 구현\"},{\"id\":\"sp-cb4\",\"title\":\"추천\",\"content\":\"저층 세대, 침실, 서재\"}]",
+      "style_cards": "[{\"id\":\"st-c1\",\"name\":\"내추럴 우드톤\",\"imageUrl\":\"https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Natural wood tone combi blinds in living room\",\"videoPrompt\":\"Adjusting combi blinds open and close\"},{\"id\":\"st-c2\",\"name\":\"화사한 다이닝\",\"imageUrl\":\"https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Bright dining room with white combi blinds\",\"videoPrompt\":\"Sunlight patterns through combi blinds\"}]"
+    }
+  },
+  "node-1768352517295": {
+    "id": "node-1768352517295",
+    "parentId": "prod-combi-basic",
+    "type": "DATA",
+    "label": "스핑크스",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768354591463",
+      "node-1768354597052",
+      "node-1768354603629"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352551607": {
+    "id": "node-1768352551607",
+    "parentId": "prod-combi-basic",
+    "type": "DATA",
+    "label": "오피루스",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768354612322",
+      "node-1768354618791",
+      "node-1768354637984",
+      "node-1768354640941",
+      "node-1768354644606"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352563937": {
+    "id": "node-1768352563937",
+    "parentId": "prod-combi-basic",
+    "type": "DATA",
+    "label": "엘사",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768354649024",
+      "node-1768354652451"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352573545": {
+    "id": "node-1768352573545",
+    "parentId": "prod-combi-basic",
+    "type": "DATA",
+    "label": "루돌프",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768354655969",
+      "node-1768354659242",
+      "node-1768354662696",
+      "node-1768354665266"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352591046": {
+    "id": "node-1768352591046",
+    "parentId": "node-1768352478788",
+    "type": "DATA",
+    "label": "아침정원",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768354673024",
+      "node-1768354676821",
+      "node-1768354679413",
+      "node-1768354683256"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352598781": {
+    "id": "node-1768352598781",
+    "parentId": "node-1768352478788",
+    "type": "DATA",
+    "label": "베를린",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768354687042",
+      "node-1768354690573",
+      "node-1768354695083"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352603519": {
+    "id": "node-1768352603519",
+    "parentId": "node-1768352478788",
+    "type": "DATA",
+    "label": "로마",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768354698645",
+      "node-1768354702008",
+      "node-1768354704697"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352618881": {
+    "id": "node-1768352618881",
+    "parentId": "sub-honeycomb",
+    "type": "CATEGORY",
+    "label": "일반",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768352648840",
+      "node-1768352664017"
+    ],
+    "attributes": {
+      "nodeType": "category"
+    }
+  },
+  "node-1768352627267": {
+    "id": "node-1768352627267",
+    "parentId": "sub-honeycomb",
+    "type": "CATEGORY",
+    "label": "암막",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768352689316",
+      "node-1768352697101",
+      "node-1769964296923"
+    ],
+    "attributes": {
+      "nodeType": "category"
+    }
+  },
+  "node-1768352648840": {
+    "id": "node-1768352648840",
+    "parentId": "node-1768352618881",
+    "type": "CATEGORY",
+    "label": "45mm",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768354711226",
+      "node-1768354714316",
+      "node-1768354716900",
+      "node-1768354721481"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352664017": {
+    "id": "node-1768352664017",
+    "parentId": "node-1768352618881",
+    "type": "CATEGORY",
+    "label": "66mm",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768354726524",
+      "node-1768354730382",
+      "node-1768354733521",
+      "node-1768354736618"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352689316": {
+    "id": "node-1768352689316",
+    "parentId": "node-1768352627267",
+    "type": "CATEGORY",
+    "label": "45mm",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768354742027",
+      "node-1768354745762",
+      "node-1768354748935"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768352697101": {
+    "id": "node-1768352697101",
+    "parentId": "node-1768352627267",
+    "type": "DATA",
+    "label": "66mm",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1768354752483",
+      "node-1768354755233",
+      "node-1768354758172",
+      "node-1768354761553"
+    ],
+    "attributes": {
+      "nodeType": "product"
+    }
+  },
+  "node-1768353306988": {
+    "id": "node-1768353306988",
+    "parentId": "prod-bamboo",
+    "type": "DATA",
+    "label": "블랙",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768353314350": {
+    "id": "node-1768353314350",
+    "parentId": "prod-bamboo",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768353321484": {
+    "id": "node-1768353321484",
+    "parentId": "prod-bamboo",
+    "type": "DATA",
+    "label": "아이보리",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "node-1768353369893": {
+    "id": "node-1768353369893",
+    "parentId": "prod-bamboo",
+    "type": "DATA",
+    "label": "네이비",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color"
+    }
+  },
+  "copy-1769993226853-prc0kij": {
+    "id": "copy-1769993226853-prc0kij",
+    "parentId": "root-1769964471267-partner-d1",
+    "type": "CATEGORY",
+    "label": "블라인드",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226853-4h2fba1",
+      "copy-1769993226854-swlq68a",
+      "copy-1769993226854-onodnrs",
+      "copy-1769993226854-2d9t8ij"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993226853-4h2fba1": {
+    "id": "copy-1769993226853-4h2fba1",
+    "parentId": "copy-1769993226853-prc0kij",
+    "type": "CATEGORY",
+    "label": "우드",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226853-fv19qq1",
+      "copy-1769993226854-5irt9y6",
+      "copy-1769993226854-fcy68jj"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993226853-fv19qq1": {
+    "id": "copy-1769993226853-fv19qq1",
+    "parentId": "copy-1769993226853-4h2fba1",
+    "type": "CATEGORY",
+    "label": "25mm",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226853-l3xo68e",
+      "copy-1769993226854-pl1izzc",
+      "copy-1769993226854-t59y475",
+      "copy-1769993226854-l6wxrwg"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993226853-l3xo68e": {
+    "id": "copy-1769993226853-l3xo68e",
+    "parentId": "copy-1769993226853-fv19qq1",
+    "type": "DATA",
+    "label": "소나무",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226853-dqqtc3g",
+      "copy-1769993226853-nzb8pa9",
+      "copy-1769993226853-z4xvpmt"
+    ],
+    "attributes": {
+      "product": "Pine",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226853-dqqtc3g": {
+    "id": "copy-1769993226853-dqqtc3g",
+    "parentId": "copy-1769993226853-l3xo68e",
+    "type": "DATA",
+    "label": "블랙",
+    "isExpanded": false,
+    "childrenIds": [],
+    "attributes": {
+      "color": "#000000",
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226853-nzb8pa9": {
+    "id": "copy-1769993226853-nzb8pa9",
+    "parentId": "copy-1769993226853-l3xo68e",
+    "type": "DATA",
+    "label": "화이트",
+    "isExpanded": false,
+    "childrenIds": [],
+    "attributes": {
+      "color": "#FFFFFF",
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226853-z4xvpmt": {
+    "id": "copy-1769993226853-z4xvpmt",
+    "parentId": "copy-1769993226853-l3xo68e",
+    "type": "DATA",
+    "label": "아이보리",
+    "isExpanded": false,
+    "childrenIds": [],
+    "attributes": {
+      "color": "#FFFFF0",
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-pl1izzc": {
+    "id": "copy-1769993226854-pl1izzc",
+    "parentId": "copy-1769993226853-fv19qq1",
+    "type": "DATA",
+    "label": "대나무",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-ecquh39",
+      "copy-1769993226854-dpujsc0",
+      "copy-1769993226854-loq6xrc",
+      "copy-1769993226854-7rwtjto"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993226854-ecquh39": {
+    "id": "copy-1769993226854-ecquh39",
+    "parentId": "copy-1769993226854-pl1izzc",
+    "type": "DATA",
+    "label": "블랙",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-dpujsc0": {
+    "id": "copy-1769993226854-dpujsc0",
+    "parentId": "copy-1769993226854-pl1izzc",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-loq6xrc": {
+    "id": "copy-1769993226854-loq6xrc",
+    "parentId": "copy-1769993226854-pl1izzc",
+    "type": "DATA",
+    "label": "아이보리",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-7rwtjto": {
+    "id": "copy-1769993226854-7rwtjto",
+    "parentId": "copy-1769993226854-pl1izzc",
+    "type": "DATA",
+    "label": "네이비",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-t59y475": {
+    "id": "copy-1769993226854-t59y475",
+    "parentId": "copy-1769993226853-fv19qq1",
+    "type": "DATA",
+    "label": "오동나무",
+    "isExpanded": true,
+    "childrenIds": [],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993226854-l6wxrwg": {
+    "id": "copy-1769993226854-l6wxrwg",
+    "parentId": "copy-1769993226853-fv19qq1",
+    "type": "DATA",
+    "label": "우드칩",
+    "isExpanded": true,
+    "childrenIds": [],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993226854-5irt9y6": {
+    "id": "copy-1769993226854-5irt9y6",
+    "parentId": "copy-1769993226853-4h2fba1",
+    "type": "CATEGORY",
+    "label": "35mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993226854-fcy68jj": {
+    "id": "copy-1769993226854-fcy68jj",
+    "parentId": "copy-1769993226853-4h2fba1",
+    "type": "CATEGORY",
+    "label": "55mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993226854-swlq68a": {
+    "id": "copy-1769993226854-swlq68a",
+    "parentId": "copy-1769993226853-prc0kij",
+    "type": "CATEGORY",
+    "label": "롤",
+    "isExpanded": false,
+    "childrenIds": [
+      "copy-1769993226854-bla8qm8",
+      "copy-1769993226854-v8ax9t9"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993226854-bla8qm8": {
+    "id": "copy-1769993226854-bla8qm8",
+    "parentId": "copy-1769993226854-swlq68a",
+    "type": "DATA",
+    "label": "일반",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-irm4za8",
+      "copy-1769993226854-v7vdj8q",
+      "copy-1769993226854-tdo855i",
+      "copy-1769993226854-1evjro0"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "spec_cards": "[{\"id\":\"sp-r1\",\"title\":\"원단소재\",\"content\":\"Polyester 100% / 친환경 무독성 코팅\"},{\"id\":\"sp-r2\",\"title\":\"기능성\",\"content\":\"자외선 차단 90% 이상, 생활 방수 및 방오 가공\"},{\"id\":\"sp-r3\",\"title\":\"원단폭\",\"content\":\"200cm / 240cm / 280cm (광폭 지원)\"},{\"id\":\"sp-r4\",\"title\":\"관리방법\",\"content\":\"마른 걸레나 먼지떨이로 가볍게 먼지 제거 (세탁 불가)\"}]",
+      "style_cards": "[{\"id\":\"st-r1\",\"name\":\"모던 오피스\",\"imageUrl\":\"https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Modern office with clean white roll screens\",\"videoPrompt\":\"Sunlight filtering through roll screen in office\"},{\"id\":\"st-r2\",\"name\":\"심플 리빙\",\"imageUrl\":\"https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Minimalist living room with beige roll blinds\",\"videoPrompt\":\"Slow pan of living room window\"}]",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-irm4za8": {
+    "id": "copy-1769993226854-irm4za8",
+    "parentId": "copy-1769993226854-bla8qm8",
+    "type": "DATA",
+    "label": "시드니",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-j5dk1rr",
+      "copy-1769993226854-lv9doy4",
+      "copy-1769993226854-sybc89b",
+      "copy-1769993226854-z39gaho"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-j5dk1rr": {
+    "id": "copy-1769993226854-j5dk1rr",
+    "parentId": "copy-1769993226854-irm4za8",
+    "type": "DATA",
+    "label": "아이보리",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-lv9doy4": {
+    "id": "copy-1769993226854-lv9doy4",
+    "parentId": "copy-1769993226854-irm4za8",
+    "type": "DATA",
+    "label": "버건디",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-sybc89b": {
+    "id": "copy-1769993226854-sybc89b",
+    "parentId": "copy-1769993226854-irm4za8",
+    "type": "DATA",
+    "label": "라벤더",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-z39gaho": {
+    "id": "copy-1769993226854-z39gaho",
+    "parentId": "copy-1769993226854-irm4za8",
+    "type": "DATA",
+    "label": "베이지",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-v7vdj8q": {
+    "id": "copy-1769993226854-v7vdj8q",
+    "parentId": "copy-1769993226854-bla8qm8",
+    "type": "DATA",
+    "label": "방콕",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-9pon9rz",
+      "copy-1769993226854-8668jji",
+      "copy-1769993226854-s60ocyw",
+      "copy-1769993226854-1bq9nx7"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-9pon9rz": {
+    "id": "copy-1769993226854-9pon9rz",
+    "parentId": "copy-1769993226854-v7vdj8q",
+    "type": "DATA",
+    "label": "차콜",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-8668jji": {
+    "id": "copy-1769993226854-8668jji",
+    "parentId": "copy-1769993226854-v7vdj8q",
+    "type": "DATA",
+    "label": "버건디",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-s60ocyw": {
+    "id": "copy-1769993226854-s60ocyw",
+    "parentId": "copy-1769993226854-v7vdj8q",
+    "type": "DATA",
+    "label": "민트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-1bq9nx7": {
+    "id": "copy-1769993226854-1bq9nx7",
+    "parentId": "copy-1769993226854-v7vdj8q",
+    "type": "DATA",
+    "label": "스카이블루",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-tdo855i": {
+    "id": "copy-1769993226854-tdo855i",
+    "parentId": "copy-1769993226854-bla8qm8",
+    "type": "DATA",
+    "label": "파리",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-sjnrk28",
+      "copy-1769993226854-fawha0k",
+      "copy-1769993226854-2oc9or4",
+      "copy-1769993226854-3lwwsgd"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-sjnrk28": {
+    "id": "copy-1769993226854-sjnrk28",
+    "parentId": "copy-1769993226854-tdo855i",
+    "type": "DATA",
+    "label": "아이보리",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-fawha0k": {
+    "id": "copy-1769993226854-fawha0k",
+    "parentId": "copy-1769993226854-tdo855i",
+    "type": "DATA",
+    "label": "라벤더",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-2oc9or4": {
+    "id": "copy-1769993226854-2oc9or4",
+    "parentId": "copy-1769993226854-tdo855i",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-3lwwsgd": {
+    "id": "copy-1769993226854-3lwwsgd",
+    "parentId": "copy-1769993226854-tdo855i",
+    "type": "DATA",
+    "label": "라벤더",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-1evjro0": {
+    "id": "copy-1769993226854-1evjro0",
+    "parentId": "copy-1769993226854-bla8qm8",
+    "type": "DATA",
+    "label": "런던",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-ancttyd",
+      "copy-1769993226854-f6dhzgc",
+      "copy-1769993226854-214yanu",
+      "copy-1769993226854-5m6mu44"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-ancttyd": {
+    "id": "copy-1769993226854-ancttyd",
+    "parentId": "copy-1769993226854-1evjro0",
+    "type": "DATA",
+    "label": "피치",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-f6dhzgc": {
+    "id": "copy-1769993226854-f6dhzgc",
+    "parentId": "copy-1769993226854-1evjro0",
+    "type": "DATA",
+    "label": "화이트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-214yanu": {
+    "id": "copy-1769993226854-214yanu",
+    "parentId": "copy-1769993226854-1evjro0",
+    "type": "DATA",
+    "label": "그레이",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-5m6mu44": {
+    "id": "copy-1769993226854-5m6mu44",
+    "parentId": "copy-1769993226854-1evjro0",
+    "type": "DATA",
+    "label": "민트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-v8ax9t9": {
+    "id": "copy-1769993226854-v8ax9t9",
+    "parentId": "copy-1769993226854-swlq68a",
+    "type": "DATA",
+    "label": "암막",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-cedzz4o",
+      "copy-1769993226854-cgz4muh",
+      "copy-1769993226854-0h4116h"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "spec_cards": "[{\"id\":\"sp-rb1\",\"title\":\"암막률\",\"content\":\"99.9% 완벽 암막 (Blackout Coating)\"},{\"id\":\"sp-rb2\",\"title\":\"단열효과\",\"content\":\"여름철 열기 차단 및 겨울철 냉기 차단 효과 우수\"},{\"id\":\"sp-rb3\",\"title\":\"소재\",\"content\":\"Polyester 100% + 3 Pass Foam Coating\"},{\"id\":\"sp-rb4\",\"title\":\"용도\",\"content\":\"침실, 회의실, 시청각실 등 빛 차단이 필요한 공간\"}]",
+      "style_cards": "[{\"id\":\"st-rb1\",\"name\":\"호텔식 침실\",\"imageUrl\":\"https://images.unsplash.com/photo-1616594039964-40891a9046c9?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Dark cozy bedroom with blackout blinds\",\"videoPrompt\":\"Morning light blocked by blinds\"},{\"id\":\"st-rb2\",\"name\":\"홈 시네마\",\"imageUrl\":\"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Dark room with projector and blackout screens\",\"videoPrompt\":\"Dimming lights in media room\"}]",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-cedzz4o": {
+    "id": "copy-1769993226854-cedzz4o",
+    "parentId": "copy-1769993226854-v8ax9t9",
+    "type": "DATA",
+    "label": "홍콩",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-8giinz1",
+      "copy-1769993226854-q33bfrh",
+      "copy-1769993226854-1v068am"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-8giinz1": {
+    "id": "copy-1769993226854-8giinz1",
+    "parentId": "copy-1769993226854-cedzz4o",
+    "type": "DATA",
+    "label": "버건디",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-q33bfrh": {
+    "id": "copy-1769993226854-q33bfrh",
+    "parentId": "copy-1769993226854-cedzz4o",
+    "type": "DATA",
+    "label": "차콜",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-1v068am": {
+    "id": "copy-1769993226854-1v068am",
+    "parentId": "copy-1769993226854-cedzz4o",
+    "type": "DATA",
+    "label": "베이지",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-cgz4muh": {
+    "id": "copy-1769993226854-cgz4muh",
+    "parentId": "copy-1769993226854-v8ax9t9",
+    "type": "DATA",
+    "label": "두바이",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-qf81e4z",
+      "copy-1769993226854-lkhkh8o",
+      "copy-1769993226854-buud0tk",
+      "copy-1769993226854-osonsgp"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-qf81e4z": {
+    "id": "copy-1769993226854-qf81e4z",
+    "parentId": "copy-1769993226854-cgz4muh",
+    "type": "DATA",
+    "label": "피치",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-lkhkh8o": {
+    "id": "copy-1769993226854-lkhkh8o",
+    "parentId": "copy-1769993226854-cgz4muh",
+    "type": "DATA",
+    "label": "화이트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-buud0tk": {
+    "id": "copy-1769993226854-buud0tk",
+    "parentId": "copy-1769993226854-cgz4muh",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-osonsgp": {
+    "id": "copy-1769993226854-osonsgp",
+    "parentId": "copy-1769993226854-cgz4muh",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-0h4116h": {
+    "id": "copy-1769993226854-0h4116h",
+    "parentId": "copy-1769993226854-v8ax9t9",
+    "type": "DATA",
+    "label": "바르셀로나",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-j567jc0",
+      "copy-1769993226854-9kztn17",
+      "copy-1769993226854-htxod1a"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-j567jc0": {
+    "id": "copy-1769993226854-j567jc0",
+    "parentId": "copy-1769993226854-0h4116h",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-9kztn17": {
+    "id": "copy-1769993226854-9kztn17",
+    "parentId": "copy-1769993226854-0h4116h",
+    "type": "DATA",
+    "label": "블랙",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-htxod1a": {
+    "id": "copy-1769993226854-htxod1a",
+    "parentId": "copy-1769993226854-0h4116h",
+    "type": "DATA",
+    "label": "차콜",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-onodnrs": {
+    "id": "copy-1769993226854-onodnrs",
+    "parentId": "copy-1769993226853-prc0kij",
+    "type": "CATEGORY",
+    "label": "콤비",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-wrbst9r",
+      "copy-1769993226854-ggqtg3e"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993226854-wrbst9r": {
+    "id": "copy-1769993226854-wrbst9r",
+    "parentId": "copy-1769993226854-onodnrs",
+    "type": "DATA",
+    "label": "일반콤비",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-hy5snzx",
+      "copy-1769993226854-hqwvc55",
+      "copy-1769993226854-mn32b0n",
+      "copy-1769993226854-4vrdwx8"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "spec_cards": "[{\"id\":\"sp-c1\",\"title\":\"구조\",\"content\":\"75mm 솔리드 + 50mm 쉬어망사 교차 이중 구조\"},{\"id\":\"sp-c2\",\"title\":\"소재\",\"content\":\"High Quality Polyester 100%\"},{\"id\":\"sp-c3\",\"title\":\"특징\",\"content\":\"채광 조절 용이, 통기성 우수, 사생활 보호 효과\"},{\"id\":\"sp-c4\",\"title\":\"원산지\",\"content\":\"대한민국 (Made in Korea)\"}]",
+      "style_cards": "[{\"id\":\"st-c1\",\"name\":\"내추럴 우드톤\",\"imageUrl\":\"https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Natural wood tone combi blinds in living room\",\"videoPrompt\":\"Adjusting combi blinds open and close\"},{\"id\":\"st-c2\",\"name\":\"화사한 다이닝\",\"imageUrl\":\"https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Bright dining room with white combi blinds\",\"videoPrompt\":\"Sunlight patterns through combi blinds\"}]",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-hy5snzx": {
+    "id": "copy-1769993226854-hy5snzx",
+    "parentId": "copy-1769993226854-wrbst9r",
+    "type": "DATA",
+    "label": "스핑크스",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-hqwvc55": {
+    "id": "copy-1769993226854-hqwvc55",
+    "parentId": "copy-1769993226854-wrbst9r",
+    "type": "DATA",
+    "label": "오피루스",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-mn32b0n": {
+    "id": "copy-1769993226854-mn32b0n",
+    "parentId": "copy-1769993226854-wrbst9r",
+    "type": "DATA",
+    "label": "엘사",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-4vrdwx8": {
+    "id": "copy-1769993226854-4vrdwx8",
+    "parentId": "copy-1769993226854-wrbst9r",
+    "type": "DATA",
+    "label": "루돌프",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-ggqtg3e": {
+    "id": "copy-1769993226854-ggqtg3e",
+    "parentId": "copy-1769993226854-onodnrs",
+    "type": "DATA",
+    "label": "암막콤비",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-bouc5pp",
+      "copy-1769993226854-qj5by6p",
+      "copy-1769993226854-rdz7via"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "spec_cards": "[{\"id\":\"sp-cb1\",\"title\":\"기능\",\"content\":\"암막 기능이 추가된 콤비 블라인드 (암막률 90%)\"},{\"id\":\"sp-cb2\",\"title\":\"구조\",\"content\":\"암막 원단과 촘촘한 망사의 이중 교차\"},{\"id\":\"sp-cb3\",\"title\":\"디자인\",\"content\":\"고급스러운 텍스처와 깊이감 있는 컬러 구현\"},{\"id\":\"sp-cb4\",\"title\":\"추천\",\"content\":\"저층 세대, 침실, 서재\"}]",
+      "style_cards": "[{\"id\":\"st-c1\",\"name\":\"내추럴 우드톤\",\"imageUrl\":\"https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Natural wood tone combi blinds in living room\",\"videoPrompt\":\"Adjusting combi blinds open and close\"},{\"id\":\"st-c2\",\"name\":\"화사한 다이닝\",\"imageUrl\":\"https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Bright dining room with white combi blinds\",\"videoPrompt\":\"Sunlight patterns through combi blinds\"}]",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-bouc5pp": {
+    "id": "copy-1769993226854-bouc5pp",
+    "parentId": "copy-1769993226854-ggqtg3e",
+    "type": "DATA",
+    "label": "아침정원",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-qj5by6p": {
+    "id": "copy-1769993226854-qj5by6p",
+    "parentId": "copy-1769993226854-ggqtg3e",
+    "type": "DATA",
+    "label": "베를린",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-rdz7via": {
+    "id": "copy-1769993226854-rdz7via",
+    "parentId": "copy-1769993226854-ggqtg3e",
+    "type": "DATA",
+    "label": "로마",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-2d9t8ij": {
+    "id": "copy-1769993226854-2d9t8ij",
+    "parentId": "copy-1769993226853-prc0kij",
+    "type": "CATEGORY",
+    "label": "허니콤",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-z3a0ey3",
+      "copy-1769993226854-ogokexi"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993226854-z3a0ey3": {
+    "id": "copy-1769993226854-z3a0ey3",
+    "parentId": "copy-1769993226854-2d9t8ij",
+    "type": "CATEGORY",
+    "label": "일반",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-3xv3c6g",
+      "copy-1769993226854-al95cvq"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-3xv3c6g": {
+    "id": "copy-1769993226854-3xv3c6g",
+    "parentId": "copy-1769993226854-z3a0ey3",
+    "type": "CATEGORY",
+    "label": "45mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-al95cvq": {
+    "id": "copy-1769993226854-al95cvq",
+    "parentId": "copy-1769993226854-z3a0ey3",
+    "type": "CATEGORY",
+    "label": "66mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-ogokexi": {
+    "id": "copy-1769993226854-ogokexi",
+    "parentId": "copy-1769993226854-2d9t8ij",
+    "type": "CATEGORY",
+    "label": "암막",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-4h4g9nb",
+      "copy-1769993226854-xd35d7q",
+      "copy-1769993226854-guchu2e"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-4h4g9nb": {
+    "id": "copy-1769993226854-4h4g9nb",
+    "parentId": "copy-1769993226854-ogokexi",
+    "type": "CATEGORY",
+    "label": "45mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-xd35d7q": {
+    "id": "copy-1769993226854-xd35d7q",
+    "parentId": "copy-1769993226854-ogokexi",
+    "type": "DATA",
+    "label": "66mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-guchu2e": {
+    "id": "copy-1769993226854-guchu2e",
+    "parentId": "copy-1769993226854-ogokexi",
+    "type": "DATA",
+    "label": "77mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993226854-3o7oz1e": {
+    "id": "copy-1769993226854-3o7oz1e",
+    "parentId": "root-1769964471267-partner-d1",
+    "type": "CATEGORY",
+    "label": "커튼",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-p7ftg8c"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993226854-p7ftg8c": {
+    "id": "copy-1769993226854-p7ftg8c",
+    "parentId": "copy-1769993226854-3o7oz1e",
+    "type": "CATEGORY",
+    "label": "속커튼",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993226854-wqjkdfp"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993226854-wqjkdfp": {
+    "id": "copy-1769993226854-wqjkdfp",
+    "parentId": "copy-1769993226854-p7ftg8c",
+    "type": "DATA",
+    "label": "쉬폰",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-h160v05": {
+    "id": "copy-1769993242644-h160v05",
+    "parentId": "root-1769964471267-partner-d1",
+    "type": "CATEGORY",
+    "label": "블라인드",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-phmrhmn",
+      "copy-1769993242644-jguzu7c",
+      "copy-1769993242644-m5npbhm",
+      "copy-1769993242644-vc54pjl"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993242644-phmrhmn": {
+    "id": "copy-1769993242644-phmrhmn",
+    "parentId": "copy-1769993242644-h160v05",
+    "type": "CATEGORY",
+    "label": "우드",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-ba7wwtb",
+      "copy-1769993242644-r0n97b7",
+      "copy-1769993242644-livhbf9"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993242644-ba7wwtb": {
+    "id": "copy-1769993242644-ba7wwtb",
+    "parentId": "copy-1769993242644-phmrhmn",
+    "type": "CATEGORY",
+    "label": "25mm",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-z29txd1",
+      "copy-1769993242644-wrxq4mt",
+      "copy-1769993242644-x3o4lj1",
+      "copy-1769993242644-cgg7hec"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993242644-z29txd1": {
+    "id": "copy-1769993242644-z29txd1",
+    "parentId": "copy-1769993242644-ba7wwtb",
+    "type": "DATA",
+    "label": "소나무",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-utfounz",
+      "copy-1769993242644-hh1g7i6",
+      "copy-1769993242644-jw476mo"
+    ],
+    "attributes": {
+      "product": "Pine",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-utfounz": {
+    "id": "copy-1769993242644-utfounz",
+    "parentId": "copy-1769993242644-z29txd1",
+    "type": "DATA",
+    "label": "블랙",
+    "isExpanded": false,
+    "childrenIds": [],
+    "attributes": {
+      "color": "#000000",
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-hh1g7i6": {
+    "id": "copy-1769993242644-hh1g7i6",
+    "parentId": "copy-1769993242644-z29txd1",
+    "type": "DATA",
+    "label": "화이트",
+    "isExpanded": false,
+    "childrenIds": [],
+    "attributes": {
+      "color": "#FFFFFF",
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-jw476mo": {
+    "id": "copy-1769993242644-jw476mo",
+    "parentId": "copy-1769993242644-z29txd1",
+    "type": "DATA",
+    "label": "아이보리",
+    "isExpanded": false,
+    "childrenIds": [],
+    "attributes": {
+      "color": "#FFFFF0",
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-wrxq4mt": {
+    "id": "copy-1769993242644-wrxq4mt",
+    "parentId": "copy-1769993242644-ba7wwtb",
+    "type": "DATA",
+    "label": "대나무",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-x6omz6o",
+      "copy-1769993242644-3f8f48f",
+      "copy-1769993242644-0h9v13b",
+      "copy-1769993242644-fohatqa"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993242644-x6omz6o": {
+    "id": "copy-1769993242644-x6omz6o",
+    "parentId": "copy-1769993242644-wrxq4mt",
+    "type": "DATA",
+    "label": "블랙",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-3f8f48f": {
+    "id": "copy-1769993242644-3f8f48f",
+    "parentId": "copy-1769993242644-wrxq4mt",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-0h9v13b": {
+    "id": "copy-1769993242644-0h9v13b",
+    "parentId": "copy-1769993242644-wrxq4mt",
+    "type": "DATA",
+    "label": "아이보리",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-fohatqa": {
+    "id": "copy-1769993242644-fohatqa",
+    "parentId": "copy-1769993242644-wrxq4mt",
+    "type": "DATA",
+    "label": "네이비",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-x3o4lj1": {
+    "id": "copy-1769993242644-x3o4lj1",
+    "parentId": "copy-1769993242644-ba7wwtb",
+    "type": "DATA",
+    "label": "오동나무",
+    "isExpanded": true,
+    "childrenIds": [],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993242644-cgg7hec": {
+    "id": "copy-1769993242644-cgg7hec",
+    "parentId": "copy-1769993242644-ba7wwtb",
+    "type": "DATA",
+    "label": "우드칩",
+    "isExpanded": true,
+    "childrenIds": [],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993242644-r0n97b7": {
+    "id": "copy-1769993242644-r0n97b7",
+    "parentId": "copy-1769993242644-phmrhmn",
+    "type": "CATEGORY",
+    "label": "35mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993242644-livhbf9": {
+    "id": "copy-1769993242644-livhbf9",
+    "parentId": "copy-1769993242644-phmrhmn",
+    "type": "CATEGORY",
+    "label": "55mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993242644-jguzu7c": {
+    "id": "copy-1769993242644-jguzu7c",
+    "parentId": "copy-1769993242644-h160v05",
+    "type": "CATEGORY",
+    "label": "롤",
+    "isExpanded": false,
+    "childrenIds": [
+      "copy-1769993242644-k0yzzwx",
+      "copy-1769993242644-wwpydq5"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993242644-k0yzzwx": {
+    "id": "copy-1769993242644-k0yzzwx",
+    "parentId": "copy-1769993242644-jguzu7c",
+    "type": "DATA",
+    "label": "일반",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-ow12hnk",
+      "copy-1769993242644-iw961bl",
+      "copy-1769993242644-ewgpood",
+      "copy-1769993242644-saam5j4"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "spec_cards": "[{\"id\":\"sp-r1\",\"title\":\"원단소재\",\"content\":\"Polyester 100% / 친환경 무독성 코팅\"},{\"id\":\"sp-r2\",\"title\":\"기능성\",\"content\":\"자외선 차단 90% 이상, 생활 방수 및 방오 가공\"},{\"id\":\"sp-r3\",\"title\":\"원단폭\",\"content\":\"200cm / 240cm / 280cm (광폭 지원)\"},{\"id\":\"sp-r4\",\"title\":\"관리방법\",\"content\":\"마른 걸레나 먼지떨이로 가볍게 먼지 제거 (세탁 불가)\"}]",
+      "style_cards": "[{\"id\":\"st-r1\",\"name\":\"모던 오피스\",\"imageUrl\":\"https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Modern office with clean white roll screens\",\"videoPrompt\":\"Sunlight filtering through roll screen in office\"},{\"id\":\"st-r2\",\"name\":\"심플 리빙\",\"imageUrl\":\"https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Minimalist living room with beige roll blinds\",\"videoPrompt\":\"Slow pan of living room window\"}]",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-ow12hnk": {
+    "id": "copy-1769993242644-ow12hnk",
+    "parentId": "copy-1769993242644-k0yzzwx",
+    "type": "DATA",
+    "label": "시드니",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-3bjliqb",
+      "copy-1769993242644-dejxyc1",
+      "copy-1769993242644-3jvppms",
+      "copy-1769993242644-xe728qa"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-3bjliqb": {
+    "id": "copy-1769993242644-3bjliqb",
+    "parentId": "copy-1769993242644-ow12hnk",
+    "type": "DATA",
+    "label": "아이보리",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-dejxyc1": {
+    "id": "copy-1769993242644-dejxyc1",
+    "parentId": "copy-1769993242644-ow12hnk",
+    "type": "DATA",
+    "label": "버건디",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-3jvppms": {
+    "id": "copy-1769993242644-3jvppms",
+    "parentId": "copy-1769993242644-ow12hnk",
+    "type": "DATA",
+    "label": "라벤더",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-xe728qa": {
+    "id": "copy-1769993242644-xe728qa",
+    "parentId": "copy-1769993242644-ow12hnk",
+    "type": "DATA",
+    "label": "베이지",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-iw961bl": {
+    "id": "copy-1769993242644-iw961bl",
+    "parentId": "copy-1769993242644-k0yzzwx",
+    "type": "DATA",
+    "label": "방콕",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-jsliu8y",
+      "copy-1769993242644-s0ex9x7",
+      "copy-1769993242644-609rfxc",
+      "copy-1769993242644-xjnbclk"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-jsliu8y": {
+    "id": "copy-1769993242644-jsliu8y",
+    "parentId": "copy-1769993242644-iw961bl",
+    "type": "DATA",
+    "label": "차콜",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-s0ex9x7": {
+    "id": "copy-1769993242644-s0ex9x7",
+    "parentId": "copy-1769993242644-iw961bl",
+    "type": "DATA",
+    "label": "버건디",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-609rfxc": {
+    "id": "copy-1769993242644-609rfxc",
+    "parentId": "copy-1769993242644-iw961bl",
+    "type": "DATA",
+    "label": "민트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-xjnbclk": {
+    "id": "copy-1769993242644-xjnbclk",
+    "parentId": "copy-1769993242644-iw961bl",
+    "type": "DATA",
+    "label": "스카이블루",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-ewgpood": {
+    "id": "copy-1769993242644-ewgpood",
+    "parentId": "copy-1769993242644-k0yzzwx",
+    "type": "DATA",
+    "label": "파리",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-gr1oakj",
+      "copy-1769993242644-7m09i89",
+      "copy-1769993242644-rlobhho",
+      "copy-1769993242644-4w7kk82"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-gr1oakj": {
+    "id": "copy-1769993242644-gr1oakj",
+    "parentId": "copy-1769993242644-ewgpood",
+    "type": "DATA",
+    "label": "아이보리",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-7m09i89": {
+    "id": "copy-1769993242644-7m09i89",
+    "parentId": "copy-1769993242644-ewgpood",
+    "type": "DATA",
+    "label": "라벤더",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-rlobhho": {
+    "id": "copy-1769993242644-rlobhho",
+    "parentId": "copy-1769993242644-ewgpood",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-4w7kk82": {
+    "id": "copy-1769993242644-4w7kk82",
+    "parentId": "copy-1769993242644-ewgpood",
+    "type": "DATA",
+    "label": "라벤더",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-saam5j4": {
+    "id": "copy-1769993242644-saam5j4",
+    "parentId": "copy-1769993242644-k0yzzwx",
+    "type": "DATA",
+    "label": "런던",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-klbnoo1",
+      "copy-1769993242644-ke53yvb",
+      "copy-1769993242644-khpg8hi",
+      "copy-1769993242644-k54d8oc"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-klbnoo1": {
+    "id": "copy-1769993242644-klbnoo1",
+    "parentId": "copy-1769993242644-saam5j4",
+    "type": "DATA",
+    "label": "피치",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-ke53yvb": {
+    "id": "copy-1769993242644-ke53yvb",
+    "parentId": "copy-1769993242644-saam5j4",
+    "type": "DATA",
+    "label": "화이트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-khpg8hi": {
+    "id": "copy-1769993242644-khpg8hi",
+    "parentId": "copy-1769993242644-saam5j4",
+    "type": "DATA",
+    "label": "그레이",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-k54d8oc": {
+    "id": "copy-1769993242644-k54d8oc",
+    "parentId": "copy-1769993242644-saam5j4",
+    "type": "DATA",
+    "label": "민트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-wwpydq5": {
+    "id": "copy-1769993242644-wwpydq5",
+    "parentId": "copy-1769993242644-jguzu7c",
+    "type": "DATA",
+    "label": "암막",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-phphtm1",
+      "copy-1769993242644-qlicjlk",
+      "copy-1769993242644-8vmztfi"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "spec_cards": "[{\"id\":\"sp-rb1\",\"title\":\"암막률\",\"content\":\"99.9% 완벽 암막 (Blackout Coating)\"},{\"id\":\"sp-rb2\",\"title\":\"단열효과\",\"content\":\"여름철 열기 차단 및 겨울철 냉기 차단 효과 우수\"},{\"id\":\"sp-rb3\",\"title\":\"소재\",\"content\":\"Polyester 100% + 3 Pass Foam Coating\"},{\"id\":\"sp-rb4\",\"title\":\"용도\",\"content\":\"침실, 회의실, 시청각실 등 빛 차단이 필요한 공간\"}]",
+      "style_cards": "[{\"id\":\"st-rb1\",\"name\":\"호텔식 침실\",\"imageUrl\":\"https://images.unsplash.com/photo-1616594039964-40891a9046c9?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Dark cozy bedroom with blackout blinds\",\"videoPrompt\":\"Morning light blocked by blinds\"},{\"id\":\"st-rb2\",\"name\":\"홈 시네마\",\"imageUrl\":\"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Dark room with projector and blackout screens\",\"videoPrompt\":\"Dimming lights in media room\"}]",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-phphtm1": {
+    "id": "copy-1769993242644-phphtm1",
+    "parentId": "copy-1769993242644-wwpydq5",
+    "type": "DATA",
+    "label": "홍콩",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-tli0h65",
+      "copy-1769993242644-wxt6apl",
+      "copy-1769993242644-s0qp9u3"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-tli0h65": {
+    "id": "copy-1769993242644-tli0h65",
+    "parentId": "copy-1769993242644-phphtm1",
+    "type": "DATA",
+    "label": "버건디",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-wxt6apl": {
+    "id": "copy-1769993242644-wxt6apl",
+    "parentId": "copy-1769993242644-phphtm1",
+    "type": "DATA",
+    "label": "차콜",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-s0qp9u3": {
+    "id": "copy-1769993242644-s0qp9u3",
+    "parentId": "copy-1769993242644-phphtm1",
+    "type": "DATA",
+    "label": "베이지",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-qlicjlk": {
+    "id": "copy-1769993242644-qlicjlk",
+    "parentId": "copy-1769993242644-wwpydq5",
+    "type": "DATA",
+    "label": "두바이",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-6oz1lbk",
+      "copy-1769993242644-qiyn8jb",
+      "copy-1769993242644-s85iopx",
+      "copy-1769993242644-wtujhf0"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-6oz1lbk": {
+    "id": "copy-1769993242644-6oz1lbk",
+    "parentId": "copy-1769993242644-qlicjlk",
+    "type": "DATA",
+    "label": "피치",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-qiyn8jb": {
+    "id": "copy-1769993242644-qiyn8jb",
+    "parentId": "copy-1769993242644-qlicjlk",
+    "type": "DATA",
+    "label": "화이트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-s85iopx": {
+    "id": "copy-1769993242644-s85iopx",
+    "parentId": "copy-1769993242644-qlicjlk",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-wtujhf0": {
+    "id": "copy-1769993242644-wtujhf0",
+    "parentId": "copy-1769993242644-qlicjlk",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-8vmztfi": {
+    "id": "copy-1769993242644-8vmztfi",
+    "parentId": "copy-1769993242644-wwpydq5",
+    "type": "DATA",
+    "label": "바르셀로나",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-p1phq3y",
+      "copy-1769993242644-mc5whgb",
+      "copy-1769993242644-ytvd7n5"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-p1phq3y": {
+    "id": "copy-1769993242644-p1phq3y",
+    "parentId": "copy-1769993242644-8vmztfi",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-mc5whgb": {
+    "id": "copy-1769993242644-mc5whgb",
+    "parentId": "copy-1769993242644-8vmztfi",
+    "type": "DATA",
+    "label": "블랙",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-ytvd7n5": {
+    "id": "copy-1769993242644-ytvd7n5",
+    "parentId": "copy-1769993242644-8vmztfi",
+    "type": "DATA",
+    "label": "차콜",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-m5npbhm": {
+    "id": "copy-1769993242644-m5npbhm",
+    "parentId": "copy-1769993242644-h160v05",
+    "type": "CATEGORY",
+    "label": "콤비",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-we1xejh",
+      "copy-1769993242644-g2b7dle"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993242644-we1xejh": {
+    "id": "copy-1769993242644-we1xejh",
+    "parentId": "copy-1769993242644-m5npbhm",
+    "type": "DATA",
+    "label": "일반콤비",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-lc6648x",
+      "copy-1769993242644-0gm60yc",
+      "copy-1769993242644-2s56nhg",
+      "copy-1769993242644-jkfedy3"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "spec_cards": "[{\"id\":\"sp-c1\",\"title\":\"구조\",\"content\":\"75mm 솔리드 + 50mm 쉬어망사 교차 이중 구조\"},{\"id\":\"sp-c2\",\"title\":\"소재\",\"content\":\"High Quality Polyester 100%\"},{\"id\":\"sp-c3\",\"title\":\"특징\",\"content\":\"채광 조절 용이, 통기성 우수, 사생활 보호 효과\"},{\"id\":\"sp-c4\",\"title\":\"원산지\",\"content\":\"대한민국 (Made in Korea)\"}]",
+      "style_cards": "[{\"id\":\"st-c1\",\"name\":\"내추럴 우드톤\",\"imageUrl\":\"https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Natural wood tone combi blinds in living room\",\"videoPrompt\":\"Adjusting combi blinds open and close\"},{\"id\":\"st-c2\",\"name\":\"화사한 다이닝\",\"imageUrl\":\"https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Bright dining room with white combi blinds\",\"videoPrompt\":\"Sunlight patterns through combi blinds\"}]",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-lc6648x": {
+    "id": "copy-1769993242644-lc6648x",
+    "parentId": "copy-1769993242644-we1xejh",
+    "type": "DATA",
+    "label": "스핑크스",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-0gm60yc": {
+    "id": "copy-1769993242644-0gm60yc",
+    "parentId": "copy-1769993242644-we1xejh",
+    "type": "DATA",
+    "label": "오피루스",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-2s56nhg": {
+    "id": "copy-1769993242644-2s56nhg",
+    "parentId": "copy-1769993242644-we1xejh",
+    "type": "DATA",
+    "label": "엘사",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-jkfedy3": {
+    "id": "copy-1769993242644-jkfedy3",
+    "parentId": "copy-1769993242644-we1xejh",
+    "type": "DATA",
+    "label": "루돌프",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-g2b7dle": {
+    "id": "copy-1769993242644-g2b7dle",
+    "parentId": "copy-1769993242644-m5npbhm",
+    "type": "DATA",
+    "label": "암막콤비",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-7aof4k8",
+      "copy-1769993242644-71bgrqr",
+      "copy-1769993242644-pdm1e7o"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "spec_cards": "[{\"id\":\"sp-cb1\",\"title\":\"기능\",\"content\":\"암막 기능이 추가된 콤비 블라인드 (암막률 90%)\"},{\"id\":\"sp-cb2\",\"title\":\"구조\",\"content\":\"암막 원단과 촘촘한 망사의 이중 교차\"},{\"id\":\"sp-cb3\",\"title\":\"디자인\",\"content\":\"고급스러운 텍스처와 깊이감 있는 컬러 구현\"},{\"id\":\"sp-cb4\",\"title\":\"추천\",\"content\":\"저층 세대, 침실, 서재\"}]",
+      "style_cards": "[{\"id\":\"st-c1\",\"name\":\"내추럴 우드톤\",\"imageUrl\":\"https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Natural wood tone combi blinds in living room\",\"videoPrompt\":\"Adjusting combi blinds open and close\"},{\"id\":\"st-c2\",\"name\":\"화사한 다이닝\",\"imageUrl\":\"https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Bright dining room with white combi blinds\",\"videoPrompt\":\"Sunlight patterns through combi blinds\"}]",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-7aof4k8": {
+    "id": "copy-1769993242644-7aof4k8",
+    "parentId": "copy-1769993242644-g2b7dle",
+    "type": "DATA",
+    "label": "아침정원",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-71bgrqr": {
+    "id": "copy-1769993242644-71bgrqr",
+    "parentId": "copy-1769993242644-g2b7dle",
+    "type": "DATA",
+    "label": "베를린",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-pdm1e7o": {
+    "id": "copy-1769993242644-pdm1e7o",
+    "parentId": "copy-1769993242644-g2b7dle",
+    "type": "DATA",
+    "label": "로마",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-vc54pjl": {
+    "id": "copy-1769993242644-vc54pjl",
+    "parentId": "copy-1769993242644-h160v05",
+    "type": "CATEGORY",
+    "label": "허니콤",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-i2xqtn8",
+      "copy-1769993242644-v5ee269"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993242644-i2xqtn8": {
+    "id": "copy-1769993242644-i2xqtn8",
+    "parentId": "copy-1769993242644-vc54pjl",
+    "type": "CATEGORY",
+    "label": "일반",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-0au15th",
+      "copy-1769993242644-8gxse7h"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-0au15th": {
+    "id": "copy-1769993242644-0au15th",
+    "parentId": "copy-1769993242644-i2xqtn8",
+    "type": "CATEGORY",
+    "label": "45mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-8gxse7h": {
+    "id": "copy-1769993242644-8gxse7h",
+    "parentId": "copy-1769993242644-i2xqtn8",
+    "type": "CATEGORY",
+    "label": "66mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-v5ee269": {
+    "id": "copy-1769993242644-v5ee269",
+    "parentId": "copy-1769993242644-vc54pjl",
+    "type": "CATEGORY",
+    "label": "암막",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-640zjx2",
+      "copy-1769993242644-98wk5n0",
+      "copy-1769993242644-ogd4qi1"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-640zjx2": {
+    "id": "copy-1769993242644-640zjx2",
+    "parentId": "copy-1769993242644-v5ee269",
+    "type": "CATEGORY",
+    "label": "45mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-98wk5n0": {
+    "id": "copy-1769993242644-98wk5n0",
+    "parentId": "copy-1769993242644-v5ee269",
+    "type": "DATA",
+    "label": "66mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-ogd4qi1": {
+    "id": "copy-1769993242644-ogd4qi1",
+    "parentId": "copy-1769993242644-v5ee269",
+    "type": "DATA",
+    "label": "77mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993242644-b94eju3": {
+    "id": "copy-1769993242644-b94eju3",
+    "parentId": "root-1769964471267-partner-d1",
+    "type": "CATEGORY",
+    "label": "커튼",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-biucvj3"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993242644-biucvj3": {
+    "id": "copy-1769993242644-biucvj3",
+    "parentId": "copy-1769993242644-b94eju3",
+    "type": "CATEGORY",
+    "label": "속커튼",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993242644-broijf6"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993242644-broijf6": {
+    "id": "copy-1769993242644-broijf6",
+    "parentId": "copy-1769993242644-biucvj3",
+    "type": "DATA",
+    "label": "쉬폰",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "node-1769993276047": {
+    "id": "node-1769993276047",
+    "parentId": "cat-curtain",
+    "type": "CATEGORY",
+    "label": "겉커튼",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1770157034946",
+      "node-1770157039947"
+    ],
+    "attributes": {
+      "nodeType": "category"
+    }
+  },
+  "copy-1769993300122-ou9acxu": {
+    "id": "copy-1769993300122-ou9acxu",
+    "parentId": "copy-1769993300122-rh9iwpq",
+    "type": "CATEGORY",
+    "label": "우드",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300122-6yprxk3",
+      "copy-1769993300122-dtjaukd",
+      "copy-1769993300122-cd7rdmp"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993300122-6yprxk3": {
+    "id": "copy-1769993300122-6yprxk3",
+    "parentId": "copy-1769993300122-ou9acxu",
+    "type": "CATEGORY",
+    "label": "25mm",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300122-tgawjdu",
+      "copy-1769993300122-28yy53n",
+      "copy-1769993300122-5e5vhry",
+      "copy-1769993300122-2eql75d"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993300122-tgawjdu": {
+    "id": "copy-1769993300122-tgawjdu",
+    "parentId": "copy-1769993300122-6yprxk3",
+    "type": "DATA",
+    "label": "소나무",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300122-zze0mrs",
+      "copy-1769993300122-mf7n8j3",
+      "copy-1769993300122-vzox3vz"
+    ],
+    "attributes": {
+      "product": "Pine",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-zze0mrs": {
+    "id": "copy-1769993300122-zze0mrs",
+    "parentId": "copy-1769993300122-tgawjdu",
+    "type": "DATA",
+    "label": "블랙",
+    "isExpanded": false,
+    "childrenIds": [],
+    "attributes": {
+      "color": "#000000",
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-mf7n8j3": {
+    "id": "copy-1769993300122-mf7n8j3",
+    "parentId": "copy-1769993300122-tgawjdu",
+    "type": "DATA",
+    "label": "화이트",
+    "isExpanded": false,
+    "childrenIds": [],
+    "attributes": {
+      "color": "#FFFFFF",
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-vzox3vz": {
+    "id": "copy-1769993300122-vzox3vz",
+    "parentId": "copy-1769993300122-tgawjdu",
+    "type": "DATA",
+    "label": "아이보리",
+    "isExpanded": false,
+    "childrenIds": [],
+    "attributes": {
+      "color": "#FFFFF0",
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-28yy53n": {
+    "id": "copy-1769993300122-28yy53n",
+    "parentId": "copy-1769993300122-6yprxk3",
+    "type": "DATA",
+    "label": "대나무",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300122-27fkvqm",
+      "copy-1769993300122-p98g6sc",
+      "copy-1769993300122-gadqcc7",
+      "copy-1769993300122-0erhq7q"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993300122-27fkvqm": {
+    "id": "copy-1769993300122-27fkvqm",
+    "parentId": "copy-1769993300122-28yy53n",
+    "type": "DATA",
+    "label": "블랙",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-p98g6sc": {
+    "id": "copy-1769993300122-p98g6sc",
+    "parentId": "copy-1769993300122-28yy53n",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-gadqcc7": {
+    "id": "copy-1769993300122-gadqcc7",
+    "parentId": "copy-1769993300122-28yy53n",
+    "type": "DATA",
+    "label": "아이보리",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-0erhq7q": {
+    "id": "copy-1769993300122-0erhq7q",
+    "parentId": "copy-1769993300122-28yy53n",
+    "type": "DATA",
+    "label": "네이비",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-5e5vhry": {
+    "id": "copy-1769993300122-5e5vhry",
+    "parentId": "copy-1769993300122-6yprxk3",
+    "type": "DATA",
+    "label": "오동나무",
+    "isExpanded": true,
+    "childrenIds": [],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993300122-2eql75d": {
+    "id": "copy-1769993300122-2eql75d",
+    "parentId": "copy-1769993300122-6yprxk3",
+    "type": "DATA",
+    "label": "우드칩",
+    "isExpanded": true,
+    "childrenIds": [],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993300122-dtjaukd": {
+    "id": "copy-1769993300122-dtjaukd",
+    "parentId": "copy-1769993300122-ou9acxu",
+    "type": "CATEGORY",
+    "label": "35mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993300122-cd7rdmp": {
+    "id": "copy-1769993300122-cd7rdmp",
+    "parentId": "copy-1769993300122-ou9acxu",
+    "type": "CATEGORY",
+    "label": "55mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993300122-k37kekc": {
+    "id": "copy-1769993300122-k37kekc",
+    "parentId": "copy-1769993300122-rh9iwpq",
+    "type": "CATEGORY",
+    "label": "롤",
+    "isExpanded": false,
+    "childrenIds": [
+      "copy-1769993300122-ipkzc18",
+      "copy-1769993300122-7fjunuc"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993300122-ipkzc18": {
+    "id": "copy-1769993300122-ipkzc18",
+    "parentId": "copy-1769993300122-k37kekc",
+    "type": "DATA",
+    "label": "일반",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300122-ueu0rjz",
+      "copy-1769993300122-cvi6i6a",
+      "copy-1769993300122-6fyuvrt",
+      "copy-1769993300122-e9049ed"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "spec_cards": "[{\"id\":\"sp-r1\",\"title\":\"원단소재\",\"content\":\"Polyester 100% / 친환경 무독성 코팅\"},{\"id\":\"sp-r2\",\"title\":\"기능성\",\"content\":\"자외선 차단 90% 이상, 생활 방수 및 방오 가공\"},{\"id\":\"sp-r3\",\"title\":\"원단폭\",\"content\":\"200cm / 240cm / 280cm (광폭 지원)\"},{\"id\":\"sp-r4\",\"title\":\"관리방법\",\"content\":\"마른 걸레나 먼지떨이로 가볍게 먼지 제거 (세탁 불가)\"}]",
+      "style_cards": "[{\"id\":\"st-r1\",\"name\":\"모던 오피스\",\"imageUrl\":\"https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Modern office with clean white roll screens\",\"videoPrompt\":\"Sunlight filtering through roll screen in office\"},{\"id\":\"st-r2\",\"name\":\"심플 리빙\",\"imageUrl\":\"https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Minimalist living room with beige roll blinds\",\"videoPrompt\":\"Slow pan of living room window\"}]",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-ueu0rjz": {
+    "id": "copy-1769993300122-ueu0rjz",
+    "parentId": "copy-1769993300122-ipkzc18",
+    "type": "DATA",
+    "label": "시드니",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300122-cuqksy7",
+      "copy-1769993300122-m18otz9",
+      "copy-1769993300122-8mcqned",
+      "copy-1769993300122-3v42hvu"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-cuqksy7": {
+    "id": "copy-1769993300122-cuqksy7",
+    "parentId": "copy-1769993300122-ueu0rjz",
+    "type": "DATA",
+    "label": "아이보리",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-m18otz9": {
+    "id": "copy-1769993300122-m18otz9",
+    "parentId": "copy-1769993300122-ueu0rjz",
+    "type": "DATA",
+    "label": "버건디",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-8mcqned": {
+    "id": "copy-1769993300122-8mcqned",
+    "parentId": "copy-1769993300122-ueu0rjz",
+    "type": "DATA",
+    "label": "라벤더",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-3v42hvu": {
+    "id": "copy-1769993300122-3v42hvu",
+    "parentId": "copy-1769993300122-ueu0rjz",
+    "type": "DATA",
+    "label": "베이지",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-cvi6i6a": {
+    "id": "copy-1769993300122-cvi6i6a",
+    "parentId": "copy-1769993300122-ipkzc18",
+    "type": "DATA",
+    "label": "방콕",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300122-nm9oj39",
+      "copy-1769993300122-jok6dex",
+      "copy-1769993300122-b3pwlz0",
+      "copy-1769993300122-ibsrzw0"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-nm9oj39": {
+    "id": "copy-1769993300122-nm9oj39",
+    "parentId": "copy-1769993300122-cvi6i6a",
+    "type": "DATA",
+    "label": "차콜",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-jok6dex": {
+    "id": "copy-1769993300122-jok6dex",
+    "parentId": "copy-1769993300122-cvi6i6a",
+    "type": "DATA",
+    "label": "버건디",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-b3pwlz0": {
+    "id": "copy-1769993300122-b3pwlz0",
+    "parentId": "copy-1769993300122-cvi6i6a",
+    "type": "DATA",
+    "label": "민트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-ibsrzw0": {
+    "id": "copy-1769993300122-ibsrzw0",
+    "parentId": "copy-1769993300122-cvi6i6a",
+    "type": "DATA",
+    "label": "스카이블루",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-6fyuvrt": {
+    "id": "copy-1769993300122-6fyuvrt",
+    "parentId": "copy-1769993300122-ipkzc18",
+    "type": "DATA",
+    "label": "파리",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300122-r4rikwm",
+      "copy-1769993300122-29ad4fk",
+      "copy-1769993300122-w27su25",
+      "copy-1769993300122-btqxfeg"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-r4rikwm": {
+    "id": "copy-1769993300122-r4rikwm",
+    "parentId": "copy-1769993300122-6fyuvrt",
+    "type": "DATA",
+    "label": "아이보리",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-29ad4fk": {
+    "id": "copy-1769993300122-29ad4fk",
+    "parentId": "copy-1769993300122-6fyuvrt",
+    "type": "DATA",
+    "label": "라벤더",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-w27su25": {
+    "id": "copy-1769993300122-w27su25",
+    "parentId": "copy-1769993300122-6fyuvrt",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-btqxfeg": {
+    "id": "copy-1769993300122-btqxfeg",
+    "parentId": "copy-1769993300122-6fyuvrt",
+    "type": "DATA",
+    "label": "라벤더",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-e9049ed": {
+    "id": "copy-1769993300122-e9049ed",
+    "parentId": "copy-1769993300122-ipkzc18",
+    "type": "DATA",
+    "label": "런던",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300122-tr9z61t",
+      "copy-1769993300122-3npohld",
+      "copy-1769993300122-d7avzt6",
+      "copy-1769993300122-6yqg2fa"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-tr9z61t": {
+    "id": "copy-1769993300122-tr9z61t",
+    "parentId": "copy-1769993300122-e9049ed",
+    "type": "DATA",
+    "label": "피치",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-3npohld": {
+    "id": "copy-1769993300122-3npohld",
+    "parentId": "copy-1769993300122-e9049ed",
+    "type": "DATA",
+    "label": "화이트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-d7avzt6": {
+    "id": "copy-1769993300122-d7avzt6",
+    "parentId": "copy-1769993300122-e9049ed",
+    "type": "DATA",
+    "label": "그레이",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-6yqg2fa": {
+    "id": "copy-1769993300122-6yqg2fa",
+    "parentId": "copy-1769993300122-e9049ed",
+    "type": "DATA",
+    "label": "민트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-7fjunuc": {
+    "id": "copy-1769993300122-7fjunuc",
+    "parentId": "copy-1769993300122-k37kekc",
+    "type": "DATA",
+    "label": "암막",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300122-rkqq69r",
+      "copy-1769993300122-fgeuxtw",
+      "copy-1769993300123-jipky6e"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "spec_cards": "[{\"id\":\"sp-rb1\",\"title\":\"암막률\",\"content\":\"99.9% 완벽 암막 (Blackout Coating)\"},{\"id\":\"sp-rb2\",\"title\":\"단열효과\",\"content\":\"여름철 열기 차단 및 겨울철 냉기 차단 효과 우수\"},{\"id\":\"sp-rb3\",\"title\":\"소재\",\"content\":\"Polyester 100% + 3 Pass Foam Coating\"},{\"id\":\"sp-rb4\",\"title\":\"용도\",\"content\":\"침실, 회의실, 시청각실 등 빛 차단이 필요한 공간\"}]",
+      "style_cards": "[{\"id\":\"st-rb1\",\"name\":\"호텔식 침실\",\"imageUrl\":\"https://images.unsplash.com/photo-1616594039964-40891a9046c9?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Dark cozy bedroom with blackout blinds\",\"videoPrompt\":\"Morning light blocked by blinds\"},{\"id\":\"st-rb2\",\"name\":\"홈 시네마\",\"imageUrl\":\"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Dark room with projector and blackout screens\",\"videoPrompt\":\"Dimming lights in media room\"}]",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-rkqq69r": {
+    "id": "copy-1769993300122-rkqq69r",
+    "parentId": "copy-1769993300122-7fjunuc",
+    "type": "DATA",
+    "label": "홍콩",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300122-ku80toq",
+      "copy-1769993300122-dj6m8qz",
+      "copy-1769993300122-up6et4k"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-ku80toq": {
+    "id": "copy-1769993300122-ku80toq",
+    "parentId": "copy-1769993300122-rkqq69r",
+    "type": "DATA",
+    "label": "버건디",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-dj6m8qz": {
+    "id": "copy-1769993300122-dj6m8qz",
+    "parentId": "copy-1769993300122-rkqq69r",
+    "type": "DATA",
+    "label": "차콜",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-up6et4k": {
+    "id": "copy-1769993300122-up6et4k",
+    "parentId": "copy-1769993300122-rkqq69r",
+    "type": "DATA",
+    "label": "베이지",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300122-fgeuxtw": {
+    "id": "copy-1769993300122-fgeuxtw",
+    "parentId": "copy-1769993300122-7fjunuc",
+    "type": "DATA",
+    "label": "두바이",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300123-7104w9e",
+      "copy-1769993300123-rbwee51",
+      "copy-1769993300123-5fgnlfs",
+      "copy-1769993300123-iwjyb45"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-7104w9e": {
+    "id": "copy-1769993300123-7104w9e",
+    "parentId": "copy-1769993300122-fgeuxtw",
+    "type": "DATA",
+    "label": "피치",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-rbwee51": {
+    "id": "copy-1769993300123-rbwee51",
+    "parentId": "copy-1769993300122-fgeuxtw",
+    "type": "DATA",
+    "label": "화이트",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-5fgnlfs": {
+    "id": "copy-1769993300123-5fgnlfs",
+    "parentId": "copy-1769993300122-fgeuxtw",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-iwjyb45": {
+    "id": "copy-1769993300123-iwjyb45",
+    "parentId": "copy-1769993300122-fgeuxtw",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-jipky6e": {
+    "id": "copy-1769993300123-jipky6e",
+    "parentId": "copy-1769993300122-7fjunuc",
+    "type": "DATA",
+    "label": "바르셀로나",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300123-i6j1u6l",
+      "copy-1769993300123-nfqxlcd",
+      "copy-1769993300123-crsbq5w"
+    ],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-i6j1u6l": {
+    "id": "copy-1769993300123-i6j1u6l",
+    "parentId": "copy-1769993300123-jipky6e",
+    "type": "DATA",
+    "label": "브라운",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-nfqxlcd": {
+    "id": "copy-1769993300123-nfqxlcd",
+    "parentId": "copy-1769993300123-jipky6e",
+    "type": "DATA",
+    "label": "블랙",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-crsbq5w": {
+    "id": "copy-1769993300123-crsbq5w",
+    "parentId": "copy-1769993300123-jipky6e",
+    "type": "DATA",
+    "label": "차콜",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "color",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-129qm3y": {
+    "id": "copy-1769993300123-129qm3y",
+    "parentId": "copy-1769993300122-rh9iwpq",
+    "type": "CATEGORY",
+    "label": "콤비",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300123-n81mny4",
+      "copy-1769993300123-ew7jqic"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993300123-n81mny4": {
+    "id": "copy-1769993300123-n81mny4",
+    "parentId": "copy-1769993300123-129qm3y",
+    "type": "DATA",
+    "label": "일반콤비",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300123-gwojy56",
+      "copy-1769993300123-y5h44th",
+      "copy-1769993300123-xeirn5l",
+      "copy-1769993300123-k7w8lm8"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "spec_cards": "[{\"id\":\"sp-c1\",\"title\":\"구조\",\"content\":\"75mm 솔리드 + 50mm 쉬어망사 교차 이중 구조\"},{\"id\":\"sp-c2\",\"title\":\"소재\",\"content\":\"High Quality Polyester 100%\"},{\"id\":\"sp-c3\",\"title\":\"특징\",\"content\":\"채광 조절 용이, 통기성 우수, 사생활 보호 효과\"},{\"id\":\"sp-c4\",\"title\":\"원산지\",\"content\":\"대한민국 (Made in Korea)\"}]",
+      "style_cards": "[{\"id\":\"st-c1\",\"name\":\"내추럴 우드톤\",\"imageUrl\":\"https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Natural wood tone combi blinds in living room\",\"videoPrompt\":\"Adjusting combi blinds open and close\"},{\"id\":\"st-c2\",\"name\":\"화사한 다이닝\",\"imageUrl\":\"https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Bright dining room with white combi blinds\",\"videoPrompt\":\"Sunlight patterns through combi blinds\"}]",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-gwojy56": {
+    "id": "copy-1769993300123-gwojy56",
+    "parentId": "copy-1769993300123-n81mny4",
+    "type": "DATA",
+    "label": "스핑크스",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-y5h44th": {
+    "id": "copy-1769993300123-y5h44th",
+    "parentId": "copy-1769993300123-n81mny4",
+    "type": "DATA",
+    "label": "오피루스",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-xeirn5l": {
+    "id": "copy-1769993300123-xeirn5l",
+    "parentId": "copy-1769993300123-n81mny4",
+    "type": "DATA",
+    "label": "엘사",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-k7w8lm8": {
+    "id": "copy-1769993300123-k7w8lm8",
+    "parentId": "copy-1769993300123-n81mny4",
+    "type": "DATA",
+    "label": "루돌프",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-ew7jqic": {
+    "id": "copy-1769993300123-ew7jqic",
+    "parentId": "copy-1769993300123-129qm3y",
+    "type": "DATA",
+    "label": "암막콤비",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300123-i99wmk5",
+      "copy-1769993300123-jqarr63",
+      "copy-1769993300123-gabu502"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "spec_cards": "[{\"id\":\"sp-cb1\",\"title\":\"기능\",\"content\":\"암막 기능이 추가된 콤비 블라인드 (암막률 90%)\"},{\"id\":\"sp-cb2\",\"title\":\"구조\",\"content\":\"암막 원단과 촘촘한 망사의 이중 교차\"},{\"id\":\"sp-cb3\",\"title\":\"디자인\",\"content\":\"고급스러운 텍스처와 깊이감 있는 컬러 구현\"},{\"id\":\"sp-cb4\",\"title\":\"추천\",\"content\":\"저층 세대, 침실, 서재\"}]",
+      "style_cards": "[{\"id\":\"st-c1\",\"name\":\"내추럴 우드톤\",\"imageUrl\":\"https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Natural wood tone combi blinds in living room\",\"videoPrompt\":\"Adjusting combi blinds open and close\"},{\"id\":\"st-c2\",\"name\":\"화사한 다이닝\",\"imageUrl\":\"https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80\",\"imagePrompt\":\"Bright dining room with white combi blinds\",\"videoPrompt\":\"Sunlight patterns through combi blinds\"}]",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-i99wmk5": {
+    "id": "copy-1769993300123-i99wmk5",
+    "parentId": "copy-1769993300123-ew7jqic",
+    "type": "DATA",
+    "label": "아침정원",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-jqarr63": {
+    "id": "copy-1769993300123-jqarr63",
+    "parentId": "copy-1769993300123-ew7jqic",
+    "type": "DATA",
+    "label": "베를린",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-gabu502": {
+    "id": "copy-1769993300123-gabu502",
+    "parentId": "copy-1769993300123-ew7jqic",
+    "type": "DATA",
+    "label": "로마",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-l2i9zuo": {
+    "id": "copy-1769993300123-l2i9zuo",
+    "parentId": "copy-1769993300122-rh9iwpq",
+    "type": "CATEGORY",
+    "label": "허니콤",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300123-t6869ih",
+      "copy-1769993300123-mt82gyz"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993300123-t6869ih": {
+    "id": "copy-1769993300123-t6869ih",
+    "parentId": "copy-1769993300123-l2i9zuo",
+    "type": "CATEGORY",
+    "label": "일반",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300123-5temvtn",
+      "copy-1769993300123-z7wd5dv"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-5temvtn": {
+    "id": "copy-1769993300123-5temvtn",
+    "parentId": "copy-1769993300123-t6869ih",
+    "type": "CATEGORY",
+    "label": "45mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-z7wd5dv": {
+    "id": "copy-1769993300123-z7wd5dv",
+    "parentId": "copy-1769993300123-t6869ih",
+    "type": "CATEGORY",
+    "label": "66mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-mt82gyz": {
+    "id": "copy-1769993300123-mt82gyz",
+    "parentId": "copy-1769993300123-l2i9zuo",
+    "type": "CATEGORY",
+    "label": "암막",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300123-qxe6f8h",
+      "copy-1769993300123-db35chr",
+      "copy-1769993300123-56p3ecn"
+    ],
+    "attributes": {
+      "nodeType": "category",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-qxe6f8h": {
+    "id": "copy-1769993300123-qxe6f8h",
+    "parentId": "copy-1769993300123-mt82gyz",
+    "type": "CATEGORY",
+    "label": "45mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-db35chr": {
+    "id": "copy-1769993300123-db35chr",
+    "parentId": "copy-1769993300123-mt82gyz",
+    "type": "DATA",
+    "label": "66mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-56p3ecn": {
+    "id": "copy-1769993300123-56p3ecn",
+    "parentId": "copy-1769993300123-mt82gyz",
+    "type": "DATA",
+    "label": "77mm",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "product",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-k4cqz28": {
+    "id": "copy-1769993300123-k4cqz28",
+    "parentId": "copy-1769993300123-ioxoi02",
+    "type": "CATEGORY",
+    "label": "속커튼",
+    "isExpanded": true,
+    "childrenIds": [
+      "copy-1769993300123-0rfyoyv"
+    ],
+    "sourceIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    }
+  },
+  "copy-1769993300123-0rfyoyv": {
+    "id": "copy-1769993300123-0rfyoyv",
+    "parentId": "copy-1769993300123-k4cqz28",
+    "type": "DATA",
+    "label": "쉬폰",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "copy-1769993300123-m57v2jq": {
+    "id": "copy-1769993300123-m57v2jq",
+    "parentId": "copy-1769993300123-ioxoi02",
+    "type": "CATEGORY",
+    "label": "겉커튼",
+    "isExpanded": true,
+    "childrenIds": [],
+    "attributes": {
+      "nodeType": "category",
+      "excludedIds": "[]",
+      "virtualChildMap": "{}"
+    },
+    "sourceIds": []
+  },
+  "node-1770154509151": {
+    "id": "node-1770154509151",
+    "parentId": "sub-wood",
+    "type": "DATA",
+    "label": "스텐다드",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1770154548005",
+      "node-1770154556885",
+      "node-1770154811232"
+    ],
+    "attributes": {
+      "nodeType": "system"
+    }
+  },
+  "node-1770154522887": {
+    "id": "node-1770154522887",
+    "parentId": "sub-wood",
+    "type": "DATA",
+    "label": "전동",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1770154569932",
+      "node-1770154576194"
+    ],
+    "attributes": {
+      "nodeType": "system"
+    }
+  },
+  "node-1770154548005": {
+    "id": "node-1770154548005",
+    "parentId": "node-1770154509151",
+    "type": "DATA",
+    "label": "방향",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1770154819402",
+      "node-1770154833907"
+    ],
+    "attributes": {
+      "nodeType": "option"
+    }
+  },
+  "node-1770154556885": {
+    "id": "node-1770154556885",
+    "parentId": "node-1770154509151",
+    "type": "DATA",
+    "label": "손잡이",
+    "isExpanded": true,
+    "childrenIds": [
+      "node-1770154841889",
+      "node-1770154847173",
+      "node-1770154851977"
+    ],
+    "attributes": {
+      "nodeType": "option"
+    }
+  }
+}
