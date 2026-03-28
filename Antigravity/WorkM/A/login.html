@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WorkM - 로그인</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+body { overflow: auto; }
+.login-error { background: rgba(239,68,68,.12); border: 1.5px solid rgba(239,68,68,.3); border-radius: 8px; padding: 10px 14px; font-size: 12.5px; color: #ef4444; font-weight: 500; margin-bottom: 14px; display: none; }
+.login-error.show { display: block; }
+.login-info { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); display: flex; gap: 20px; }
+.li-item { display: flex; align-items: center; gap: 6px; font-size: 11.5px; color: rgba(255,255,255,.3); }
+.dots-anim { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.dot { position: absolute; width: 2px; height: 2px; background: rgba(79,110,247,.5); border-radius: 50%; animation: float linear infinite; }
+@keyframes float { 0% { transform: translateY(100vh) scale(0); opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { transform: translateY(-100px) scale(1); opacity: 0; } }
+.remember-check { width: 14px; height: 14px; accent-color: #4f6ef7; cursor: pointer; }
+</style>
+</head>
+<body class="login-page">
+
+<!-- 배경 파티클 -->
+<div class="dots-anim" id="dotsAnim"></div>
+
+<div class="login-card">
+  <div class="login-logo">
+    <div class="l-icon">W</div>
+    <div>
+      <div class="l-text">WorkM</div>
+      <div class="l-sub">Business Management</div>
+    </div>
+  </div>
+
+  <h1 class="login-title">다시 오셨군요!</h1>
+  <p class="login-subtitle">팀의 모든 업무를 한눈에 관리하세요</p>
+
+  <div id="loginError" class="login-error"><i data-lucide="alert-triangle" class="icon-sm"></i> 이메일 또는 비밀번호를 확인해주세요.</div>
+
+  <div class="login-form">
+    <div class="form-group">
+      <label class="form-label">이메일</label>
+      <input type="email" id="loginEmail" class="form-input" placeholder="your@company.com" value="kim@workm.kr">
+    </div>
+    <div class="form-group">
+      <label class="form-label">비밀번호</label>
+      <input type="password" id="loginPw" class="form-input" placeholder="비밀번호 입력" value="1234">
+    </div>
+    <div class="login-options">
+      <label><input type="checkbox" class="remember-check" checked> 로그인 상태 유지</label>
+      <a href="#">비밀번호 찾기</a>
+    </div>
+    <button class="btn-login" id="btnLogin" onclick="doLogin()">
+      로그인 <i data-lucide="arrow-right" class="icon-sm"></i>
+    </button>
+  </div>
+
+  <div class="login-divider">또는 데모 계정으로 체험</div>
+
+  <div class="login-demo-users">
+    <button class="demo-user-btn" onclick="loginAs(1)">
+      <div class="du-name"><i data-lucide="shield-check" class="icon-sm"></i> 김지훈</div>
+      <div class="du-role">팀장 · 개발팀</div>
+    </button>
+    <button class="demo-user-btn" onclick="loginAs(2)">
+      <div class="du-name"><i data-lucide="code" class="icon-sm"></i> 이수진</div>
+      <div class="du-role">선임 · 개발팀</div>
+    </button>
+    <button class="demo-user-btn" onclick="loginAs(5)">
+      <div class="du-name"><i data-lucide="bar-chart-3" class="icon-sm"></i> 정현수</div>
+      <div class="du-role">팀장 · 마케팅팀</div>
+    </button>
+    <button class="demo-user-btn" onclick="loginAs(4)">
+      <div class="du-name"><i data-lucide="palette" class="icon-sm"></i> 최유리</div>
+      <div class="du-role">대리 · 디자인팀</div>
+    </button>
+  </div>
+</div>
+
+<div class="login-info">
+  <div class="li-item"><i data-lucide="lock" class="icon-sm"></i> 256-bit SSL 암호화</div>
+  <div class="li-item"><i data-lucide="cloud" class="icon-sm"></i> 실시간 클라우드 동기화</div>
+  <div class="li-item"><i data-lucide="shield" class="icon-sm"></i> 2단계 인증 지원</div>
+</div>
+
+<script src="data.js"></script>
+<script>
+// 배경 파티클 생성
+(function(){
+  const container = document.getElementById('dotsAnim');
+  for(let i=0; i<30; i++){
+    const d = document.createElement('div');
+    d.className = 'dot';
+    d.style.left = Math.random()*100 + '%';
+    d.style.animationDuration = (8 + Math.random()*12) + 's';
+    d.style.animationDelay = (Math.random()*10) + 's';
+    d.style.width = d.style.height = (1 + Math.random()*3) + 'px';
+    container.appendChild(d);
+  }
+  lucide.createIcons();
+})();
+
+// 엔터로 로그인
+document.getElementById('loginPw').addEventListener('keydown', e => {
+  if(e.key === 'Enter') doLogin();
+});
+document.getElementById('loginEmail').addEventListener('keydown', e => {
+  if(e.key === 'Enter') document.getElementById('loginPw').focus();
+});
+
+function doLogin(){
+  const email = document.getElementById('loginEmail').value.trim();
+  const pw = document.getElementById('loginPw').value;
+  const errEl = document.getElementById('loginError');
+  const user = WS.users.find(u => u.email === email);
+  if(!user || pw !== '1234'){
+    errEl.classList.add('show');
+    document.getElementById('loginPw').style.borderColor = '#ef4444';
+    setTimeout(() => { errEl.classList.remove('show'); document.getElementById('loginPw').style.borderColor = ''; }, 3000);
+    return;
+  }
+  performLogin(user);
+}
+
+function loginAs(userId){
+  const user = WS.getUser(userId);
+  if(user) performLogin(user);
+}
+
+function performLogin(user){
+  const btn = document.getElementById('btnLogin');
+  btn.textContent = '로그인 중...';
+  btn.disabled = true;
+  btn.style.opacity = '0.7';
+  localStorage.setItem('ws_user', JSON.stringify(user));
+  setTimeout(() => { window.location.href = 'index.html'; }, 700);
+}
+
+// 이미 로그인된 경우
+const saved = localStorage.getItem('ws_user');
+if(saved){ window.location.href = 'index.html'; }
+</script>
+</body>
+</html>
