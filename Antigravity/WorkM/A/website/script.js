@@ -68,6 +68,7 @@
     el.style.background = data.bgColor || '#1e40af';
     el.style.color = data.fontColor || '#ffffff';
     el.style.fontSize = (data.fontSize || 13) + 'px';
+    el.style.fontWeight = data.fontWeight || 400;
     el.style.textAlign = data.align || 'center';
     el.style.justifyContent = { left: 'flex-start', center: 'center', right: 'flex-end' }[data.align] || 'center';
 
