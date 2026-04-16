@@ -1054,7 +1054,24 @@ function ApplicationSolutionView({ solId, accent }: { solId: string; accent: str
    미디어 솔루션 뷰 (갤러리 + 검색)
    ═══════════════════════════════════ */
 function MediaSolutionView({ accent }: { accent: string }) {
-  const [items] = useState<any[]>(() => getLS<any[]>('med_items', []))
+  const MEDIA_SAMPLE = [
+    { id:'ms01', mediaType:'image', title:'오로라 일몰', tags:['자연','풍경'], desc:'녹아내리는 오로라의 풍경.', dataUrl:'https://picsum.photos/seed/aurora1/1200/800', regDate:'2026-04-01' },
+    { id:'ms02', mediaType:'image', title:'커피 한 잔', tags:['카페','일상'], desc:'스팀 아트가 담긴 라떼.', dataUrl:'https://picsum.photos/seed/coffee2/800/1200', regDate:'2026-04-01' },
+    { id:'ms03', mediaType:'image', title:'도시의 야경', tags:['도시','야경'], desc:'서울 스카이라인 드론 사진.', dataUrl:'https://picsum.photos/seed/city3/1200/900', regDate:'2026-04-01' },
+    { id:'ms04', mediaType:'image', title:'핑크 플라워', tags:['플라워','미니멀'], desc:'파스텔 톤의 플라워 디테일.', dataUrl:'https://picsum.photos/seed/flower4/600/600', regDate:'2026-03-30' },
+    { id:'ms05', mediaType:'image', title:'에메랄드 호수', tags:['자연','호수'], desc:'에메랄드빛 호수 풍경.', dataUrl:'https://picsum.photos/seed/lake5/900/600', regDate:'2026-03-30' },
+    { id:'ms06', mediaType:'image', title:'산업 공장 뷰', tags:['인더스트리얼'], desc:'공장 내부 시네마틱 라이트.', dataUrl:'https://picsum.photos/seed/factory6/1200/800', regDate:'2026-03-29' },
+    { id:'ms07', mediaType:'image', title:'패션 포트레잇', tags:['패션','시즌'], desc:'시즌 컬렉션 포트레잇.', dataUrl:'https://picsum.photos/seed/fashion7/800/1100', regDate:'2026-03-28' },
+    { id:'ms08', mediaType:'image', title:'은하수 하늘', tags:['우주','밤하늘'], desc:'은하수를 잡은 장노출 사진.', dataUrl:'https://picsum.photos/seed/space8/900/900', regDate:'2026-03-28' },
+    { id:'ms09', mediaType:'image', title:'전통 한옥', tags:['한옥','전통'], desc:'기와 지붕의 전통 건축.', dataUrl:'https://picsum.photos/seed/hanok9/600/900', regDate:'2026-03-27' },
+    { id:'ms10', mediaType:'image', title:'숲의 고요함', tags:['숲','하이킹'], desc:'빛과 그림자의 숲 풍경.', dataUrl:'https://picsum.photos/seed/forest10/1200/800', regDate:'2026-03-27' },
+    { id:'ms11', mediaType:'image', title:'미니멀 인테리어', tags:['인테리어','사무실'], desc:'미니멀 사무실 인테리어.', dataUrl:'https://picsum.photos/seed/minimal11/900/600', regDate:'2026-03-26' },
+    { id:'ms12', mediaType:'image', title:'황금 수확', tags:['농촌','가을'], desc:'풍성한 수확의 순간.', dataUrl:'https://picsum.photos/seed/harvest12/800/1200', regDate:'2026-03-25' },
+  ]
+  const [items] = useState<any[]>(() => {
+    const stored = getLS<any[]>('med_items', [])
+    return stored.length > 0 ? stored : MEDIA_SAMPLE
+  })
   const [search, setSearch] = useState('')
   const [filter, setFilter] = useState<'all'|'image'|'video'>('all')
   const [selectedItem, setSelectedItem] = useState<any>(null)
@@ -1150,7 +1167,54 @@ function MediaSolutionView({ accent }: { accent: string }) {
    컨텐츠 솔루션 뷰 (리스트 + 검색)
    ═══════════════════════════════════ */
 function ContentSolutionView({ accent }: { accent: string }) {
-  const [items] = useState<any[]>(() => getLS<any[]>('chub_items', []))
+  const CONTENT_SAMPLE: any[] = [
+    // 뉴스 8건
+    { id:'cn01', category:'news', title:'2026 상반기 실적 발표', summary:'전년 대비 35% 성장한 실적을 기록했습니다.', date:'2026-04-15', tags:['실적','경영'], thumbnail:'https://picsum.photos/seed/news1/400/300', url:'' },
+    { id:'cn02', category:'news', title:'신규 지점 오픈 안내', summary:'강남 플래그십 스토어가 4월 20일 오픈합니다.', date:'2026-04-12', tags:['오픈','강남'], thumbnail:'https://picsum.photos/seed/news2/400/300', url:'' },
+    { id:'cn03', category:'news', title:'ESG 경영 우수기업 선정', summary:'환경부 주관 ESG 경영 우수기업에 선정되었습니다.', date:'2026-04-10', tags:['ESG','수상'], thumbnail:'https://picsum.photos/seed/news3/400/300', url:'' },
+    { id:'cn04', category:'news', title:'AI 기반 서비스 도입', summary:'인공지능 고객 응대 시스템을 전면 도입합니다.', date:'2026-04-08', tags:['AI','혁신'], thumbnail:'https://picsum.photos/seed/news4/400/300', url:'' },
+    { id:'cn05', category:'news', title:'해외 시장 진출 MOU 체결', summary:'일본 파트너사와 전략적 MOU를 체결했습니다.', date:'2026-04-05', tags:['해외','MOU'], thumbnail:'https://picsum.photos/seed/news5/400/300', url:'' },
+    { id:'cn06', category:'news', title:'직원 복지 정책 개편', summary:'유연근무제 확대 및 복지포인트를 상향합니다.', date:'2026-04-03', tags:['복지','인사'], thumbnail:'https://picsum.photos/seed/news6/400/300', url:'' },
+    { id:'cn07', category:'news', title:'특허 기술 등록 완료', summary:'핵심 기술 3건에 대한 국내외 특허를 취득했습니다.', date:'2026-04-01', tags:['특허','기술'], thumbnail:'https://picsum.photos/seed/news7/400/300', url:'' },
+    { id:'cn08', category:'news', title:'고객 만족도 1위 달성', summary:'업계 최초 3년 연속 고객 만족도 1위를 기록했습니다.', date:'2026-03-28', tags:['고객','만족도'], thumbnail:'https://picsum.photos/seed/news8/400/300', url:'' },
+    // 블로그 8건
+    { id:'cb01', category:'blog', title:'효과적인 팀 빌딩 방법 5가지', summary:'팀워크를 극대화하는 실전 노하우를 공유합니다.', date:'2026-04-14', tags:['팀빌딩','경영'], thumbnail:'https://picsum.photos/seed/blog1/400/300', url:'' },
+    { id:'cb02', category:'blog', title:'2026 인테리어 트렌드 분석', summary:'올해 주목할 인테리어 디자인 트렌드를 분석했습니다.', date:'2026-04-11', tags:['인테리어','트렌드'], thumbnail:'https://picsum.photos/seed/blog2/400/300', url:'' },
+    { id:'cb03', category:'blog', title:'원격 근무 생산성 높이는 팁', summary:'재택근무 환경에서 집중력을 유지하는 방법입니다.', date:'2026-04-09', tags:['원격근무','생산성'], thumbnail:'https://picsum.photos/seed/blog3/400/300', url:'' },
+    { id:'cb04', category:'blog', title:'브랜딩 전략 수립 가이드', summary:'중소기업을 위한 실전 브랜딩 가이드입니다.', date:'2026-04-07', tags:['브랜딩','마케팅'], thumbnail:'https://picsum.photos/seed/blog4/400/300', url:'' },
+    { id:'cb05', category:'blog', title:'건강한 사무실 환경 만들기', summary:'직장인 건강을 위한 사무실 환경 개선 팁입니다.', date:'2026-04-04', tags:['건강','사무실'], thumbnail:'https://picsum.photos/seed/blog5/400/300', url:'' },
+    { id:'cb06', category:'blog', title:'디지털 마케팅 A to Z', summary:'입문자를 위한 디지털 마케팅 완벽 가이드입니다.', date:'2026-04-02', tags:['디지털','마케팅'], thumbnail:'https://picsum.photos/seed/blog6/400/300', url:'' },
+    { id:'cb07', category:'blog', title:'고객 경험 혁신 사례', summary:'CX 혁신으로 매출 40%를 성장시킨 사례입니다.', date:'2026-03-30', tags:['CX','혁신'], thumbnail:'https://picsum.photos/seed/blog7/400/300', url:'' },
+    { id:'cb08', category:'blog', title:'스타트업 성장 전략', summary:'빠르게 성장하는 스타트업의 공통 전략을 분석했습니다.', date:'2026-03-27', tags:['스타트업','성장'], thumbnail:'https://picsum.photos/seed/blog8/400/300', url:'' },
+    // YouTube 8건
+    { id:'cy01', category:'youtube', title:'회사 소개 영상', summary:'우리 회사의 비전과 미션을 소개합니다.', date:'2026-04-13', tags:['소개','회사'], thumbnail:'https://picsum.photos/seed/yt1/400/300', url:'https://youtube.com' },
+    { id:'cy02', category:'youtube', title:'워크샵 현장 스케치', summary:'2026 봄 워크샵 현장을 담았습니다.', date:'2026-04-10', tags:['워크샵','현장'], thumbnail:'https://picsum.photos/seed/yt2/400/300', url:'https://youtube.com' },
+    { id:'cy03', category:'youtube', title:'제품 사용법 튜토리얼', summary:'신제품 사용법을 쉽게 알려드립니다.', date:'2026-04-08', tags:['튜토리얼','제품'], thumbnail:'https://picsum.photos/seed/yt3/400/300', url:'https://youtube.com' },
+    { id:'cy04', category:'youtube', title:'CEO 인터뷰', summary:'대표이사가 말하는 회사의 미래 비전입니다.', date:'2026-04-06', tags:['인터뷰','CEO'], thumbnail:'https://picsum.photos/seed/yt4/400/300', url:'https://youtube.com' },
+    { id:'cy05', category:'youtube', title:'고객 후기 인터뷰', summary:'실제 고객이 말하는 서비스 경험담입니다.', date:'2026-04-03', tags:['고객후기'], thumbnail:'https://picsum.photos/seed/yt5/400/300', url:'https://youtube.com' },
+    { id:'cy06', category:'youtube', title:'직원 일상 VLOG', summary:'우리 직원들의 하루를 공개합니다.', date:'2026-04-01', tags:['VLOG','직원'], thumbnail:'https://picsum.photos/seed/yt6/400/300', url:'https://youtube.com' },
+    { id:'cy07', category:'youtube', title:'서비스 업데이트 소식', summary:'3월 주요 업데이트 내용을 정리했습니다.', date:'2026-03-29', tags:['업데이트'], thumbnail:'https://picsum.photos/seed/yt7/400/300', url:'https://youtube.com' },
+    { id:'cy08', category:'youtube', title:'업계 트렌드 리뷰', summary:'2026년 업계 트렌드를 영상으로 분석합니다.', date:'2026-03-26', tags:['트렌드','리뷰'], thumbnail:'https://picsum.photos/seed/yt8/400/300', url:'https://youtube.com' },
+    // 웹사이트 8건
+    { id:'cw01', category:'website', title:'공식 홈페이지 리뉴얼', summary:'새롭게 단장한 공식 홈페이지를 소개합니다.', date:'2026-04-14', tags:['홈페이지','리뉴얼'], thumbnail:'https://picsum.photos/seed/web1/400/300', url:'https://example.com' },
+    { id:'cw02', category:'website', title:'온라인 쇼핑몰 오픈', summary:'공식 온라인 스토어가 오픈했습니다.', date:'2026-04-11', tags:['쇼핑몰','오픈'], thumbnail:'https://picsum.photos/seed/web2/400/300', url:'https://example.com' },
+    { id:'cw03', category:'website', title:'파트너 포털 안내', summary:'협력사 전용 파트너 포털을 안내합니다.', date:'2026-04-09', tags:['파트너','포털'], thumbnail:'https://picsum.photos/seed/web3/400/300', url:'https://example.com' },
+    { id:'cw04', category:'website', title:'채용 페이지 업데이트', summary:'2026년 하반기 채용 정보를 업데이트했습니다.', date:'2026-04-07', tags:['채용','커리어'], thumbnail:'https://picsum.photos/seed/web4/400/300', url:'https://example.com' },
+    { id:'cw05', category:'website', title:'고객 지원 센터', summary:'FAQ와 1:1 문의를 이용할 수 있습니다.', date:'2026-04-04', tags:['고객지원','FAQ'], thumbnail:'https://picsum.photos/seed/web5/400/300', url:'https://example.com' },
+    { id:'cw06', category:'website', title:'IR 정보 페이지', summary:'투자자를 위한 IR 자료를 공개합니다.', date:'2026-04-02', tags:['IR','투자'], thumbnail:'https://picsum.photos/seed/web6/400/300', url:'https://example.com' },
+    { id:'cw07', category:'website', title:'지속가능경영 보고서', summary:'2025 지속가능경영 보고서를 발간했습니다.', date:'2026-03-30', tags:['ESG','보고서'], thumbnail:'https://picsum.photos/seed/web7/400/300', url:'https://example.com' },
+    { id:'cw08', category:'website', title:'이벤트 랜딩 페이지', summary:'봄맞이 특별 이벤트 페이지를 오픈했습니다.', date:'2026-03-27', tags:['이벤트','프로모션'], thumbnail:'https://picsum.photos/seed/web8/400/300', url:'https://example.com' },
+  ]
+  const [items] = useState<any[]>(() => {
+    const stored = getLS<any[]>('chub_items', [])
+    const raw = stored.length > 0 ? stored : CONTENT_SAMPLE
+    // 관리자(type/img) ↔ 사이트(category/thumbnail) 호환
+    return raw.map((it: any) => ({
+      ...it,
+      category: it.category || it.type || 'news',
+      thumbnail: it.thumbnail || it.img || '',
+    }))
+  })
   const [search, setSearch] = useState('')
   const [catFilter, setCatFilter] = useState('all')
   const [expandedId, setExpandedId] = useState<string | null>(null)

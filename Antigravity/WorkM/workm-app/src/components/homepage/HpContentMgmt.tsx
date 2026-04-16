@@ -21,14 +21,40 @@ const TYPE_INFO: Record<string, { emoji: string; label: string; color: string }>
   website: { emoji: '🌐', label: '웹사이트', color: '#8b5cf6' },
 }
 
-/* ── 샘플 데이터 ── */
+/* ── 샘플 데이터 (카테고리별 8개 = 총 32개) ── */
 const SAMPLE: ContentItem[] = [
-  { id:'s1', type:'news', title:'AI 반도체 시장, 2026년 사상 최대 성장', url:'https://example.com/news1', summary:'글로벌 AI 반도체 시장이 전년 대비 42% 성장하며 사상 최대 규모를 기록했습니다.', img:'https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=280&fit=crop', tags:['AI','반도체','시장'], likes:245, views:8930, regDate:'2026-04-10' },
-  { id:'s2', type:'blog', title:'React 19의 새로운 기능 총정리', url:'https://example.com/blog1', summary:'React 19에서 추가된 Server Components, Actions 등 핵심 기능을 자세히 살펴봅니다.', img:'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=480&h=280&fit=crop', tags:['React','프론트엔드'], likes:189, views:6200, regDate:'2026-04-08' },
-  { id:'s3', type:'youtube', title:'Next.js 15 완벽 가이드 - 1시간 마스터', url:'https://youtube.com/watch1', summary:'Next.js 15의 App Router, Server Actions를 실습과 함께 배워봅니다.', img:'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=480&h=280&fit=crop', tags:['Next.js','튜토리얼'], likes:423, views:15200, regDate:'2026-04-05' },
-  { id:'s4', type:'website', title:'Vercel – 프론트엔드 배포 플랫폼', url:'https://vercel.com', summary:'Next.js 공식 호스팅 플랫폼. 글로벌 CDN과 서버리스 환경을 제공합니다.', img:'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=480&h=280&fit=crop', tags:['Vercel','배포','호스팅'], likes:312, views:11400, regDate:'2026-04-02' },
-  { id:'s5', type:'news', title:'애플, 자체 AI 칩 M5 공개 임박', url:'https://example.com/news2', summary:'애플이 M5 칩에 자체 AI 가속기를 탑재할 것이라는 보도가 나왔습니다.', img:'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=480&h=280&fit=crop', tags:['애플','M5','AI'], likes:178, views:7650, regDate:'2026-03-28' },
-  { id:'s6', type:'blog', title:'TypeScript 5.5 실전 팁 10가지', url:'https://example.com/blog2', summary:'TypeScript 5.5에서 달라진 점과 실전에서 바로 활용 가능한 팁을 소개합니다.', img:'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=480&h=280&fit=crop', tags:['TypeScript','팁'], likes:156, views:4800, regDate:'2026-03-25' },
+  { id:'cn01', type:'news', title:'2026 상반기 실적 발표', url:'', summary:'전년 대비 35% 성장한 실적을 기록했습니다.', img:'https://picsum.photos/seed/news1/480/280', tags:['실적','경영'], likes:245, views:8930, regDate:'2026-04-15' },
+  { id:'cn02', type:'news', title:'신규 지점 오픈 안내', url:'', summary:'강남 플래그십 스토어가 4월 20일 오픈합니다.', img:'https://picsum.photos/seed/news2/480/280', tags:['오픈','강남'], likes:189, views:6200, regDate:'2026-04-12' },
+  { id:'cn03', type:'news', title:'ESG 경영 우수기업 선정', url:'', summary:'환경부 주관 ESG 경영 우수기업에 선정되었습니다.', img:'https://picsum.photos/seed/news3/480/280', tags:['ESG','수상'], likes:156, views:5400, regDate:'2026-04-10' },
+  { id:'cn04', type:'news', title:'AI 기반 서비스 도입', url:'', summary:'인공지능 고객 응대 시스템을 전면 도입합니다.', img:'https://picsum.photos/seed/news4/480/280', tags:['AI','혁신'], likes:312, views:11400, regDate:'2026-04-08' },
+  { id:'cn05', type:'news', title:'해외 시장 진출 MOU 체결', url:'', summary:'일본 파트너사와 전략적 MOU를 체결했습니다.', img:'https://picsum.photos/seed/news5/480/280', tags:['해외','MOU'], likes:134, views:4200, regDate:'2026-04-05' },
+  { id:'cn06', type:'news', title:'직원 복지 정책 개편', url:'', summary:'유연근무제 확대 및 복지포인트를 상향합니다.', img:'https://picsum.photos/seed/news6/480/280', tags:['복지','인사'], likes:98, views:3800, regDate:'2026-04-03' },
+  { id:'cn07', type:'news', title:'특허 기술 등록 완료', url:'', summary:'핵심 기술 3건에 대한 국내외 특허를 취득했습니다.', img:'https://picsum.photos/seed/news7/480/280', tags:['특허','기술'], likes:178, views:7650, regDate:'2026-04-01' },
+  { id:'cn08', type:'news', title:'고객 만족도 1위 달성', url:'', summary:'업계 최초 3년 연속 고객 만족도 1위를 기록했습니다.', img:'https://picsum.photos/seed/news8/480/280', tags:['고객','만족도'], likes:267, views:9100, regDate:'2026-03-28' },
+  { id:'cb01', type:'blog', title:'효과적인 팀 빌딩 방법 5가지', url:'', summary:'팀워크를 극대화하는 실전 노하우를 공유합니다.', img:'https://picsum.photos/seed/blog1/480/280', tags:['팀빌딩','경영'], likes:423, views:15200, regDate:'2026-04-14' },
+  { id:'cb02', type:'blog', title:'2026 인테리어 트렌드 분석', url:'', summary:'올해 주목할 인테리어 디자인 트렌드를 분석했습니다.', img:'https://picsum.photos/seed/blog2/480/280', tags:['인테리어','트렌드'], likes:356, views:12800, regDate:'2026-04-11' },
+  { id:'cb03', type:'blog', title:'원격 근무 생산성 높이는 팁', url:'', summary:'재택근무 환경에서 집중력을 유지하는 방법입니다.', img:'https://picsum.photos/seed/blog3/480/280', tags:['원격근무','생산성'], likes:234, views:8400, regDate:'2026-04-09' },
+  { id:'cb04', type:'blog', title:'브랜딩 전략 수립 가이드', url:'', summary:'중소기업을 위한 실전 브랜딩 가이드입니다.', img:'https://picsum.photos/seed/blog4/480/280', tags:['브랜딩','마케팅'], likes:189, views:6700, regDate:'2026-04-07' },
+  { id:'cb05', type:'blog', title:'건강한 사무실 환경 만들기', url:'', summary:'직장인 건강을 위한 사무실 환경 개선 팁입니다.', img:'https://picsum.photos/seed/blog5/480/280', tags:['건강','사무실'], likes:145, views:5300, regDate:'2026-04-04' },
+  { id:'cb06', type:'blog', title:'디지털 마케팅 A to Z', url:'', summary:'입문자를 위한 디지털 마케팅 완벽 가이드입니다.', img:'https://picsum.photos/seed/blog6/480/280', tags:['디지털','마케팅'], likes:312, views:11000, regDate:'2026-04-02' },
+  { id:'cb07', type:'blog', title:'고객 경험 혁신 사례', url:'', summary:'CX 혁신으로 매출 40%를 성장시킨 사례입니다.', img:'https://picsum.photos/seed/blog7/480/280', tags:['CX','혁신'], likes:278, views:9800, regDate:'2026-03-30' },
+  { id:'cb08', type:'blog', title:'스타트업 성장 전략', url:'', summary:'빠르게 성장하는 스타트업의 공통 전략을 분석했습니다.', img:'https://picsum.photos/seed/blog8/480/280', tags:['스타트업','성장'], likes:201, views:7200, regDate:'2026-03-27' },
+  { id:'cy01', type:'youtube', title:'회사 소개 영상', url:'https://youtube.com', summary:'우리 회사의 비전과 미션을 소개합니다.', img:'https://picsum.photos/seed/yt1/480/280', tags:['소개','회사'], likes:534, views:18900, regDate:'2026-04-13' },
+  { id:'cy02', type:'youtube', title:'워크샵 현장 스케치', url:'https://youtube.com', summary:'2026 봄 워크샵 현장을 담았습니다.', img:'https://picsum.photos/seed/yt2/480/280', tags:['워크샵','현장'], likes:423, views:14500, regDate:'2026-04-10' },
+  { id:'cy03', type:'youtube', title:'제품 사용법 튜토리얼', url:'https://youtube.com', summary:'신제품 사용법을 쉽게 알려드립니다.', img:'https://picsum.photos/seed/yt3/480/280', tags:['튜토리얼','제품'], likes:356, views:12300, regDate:'2026-04-08' },
+  { id:'cy04', type:'youtube', title:'CEO 인터뷰', url:'https://youtube.com', summary:'대표이사가 말하는 회사의 미래 비전입니다.', img:'https://picsum.photos/seed/yt4/480/280', tags:['인터뷰','CEO'], likes:267, views:9400, regDate:'2026-04-06' },
+  { id:'cy05', type:'youtube', title:'고객 후기 인터뷰', url:'https://youtube.com', summary:'실제 고객이 말하는 서비스 경험담입니다.', img:'https://picsum.photos/seed/yt5/480/280', tags:['고객후기'], likes:198, views:7100, regDate:'2026-04-03' },
+  { id:'cy06', type:'youtube', title:'직원 일상 VLOG', url:'https://youtube.com', summary:'우리 직원들의 하루를 공개합니다.', img:'https://picsum.photos/seed/yt6/480/280', tags:['VLOG','직원'], likes:445, views:16200, regDate:'2026-04-01' },
+  { id:'cy07', type:'youtube', title:'서비스 업데이트 소식', url:'https://youtube.com', summary:'3월 주요 업데이트 내용을 정리했습니다.', img:'https://picsum.photos/seed/yt7/480/280', tags:['업데이트'], likes:167, views:5800, regDate:'2026-03-29' },
+  { id:'cy08', type:'youtube', title:'업계 트렌드 리뷰', url:'https://youtube.com', summary:'2026년 업계 트렌드를 영상으로 분석합니다.', img:'https://picsum.photos/seed/yt8/480/280', tags:['트렌드','리뷰'], likes:289, views:10500, regDate:'2026-03-26' },
+  { id:'cw01', type:'website', title:'공식 홈페이지 리뉴얼', url:'https://example.com', summary:'새롭게 단장한 공식 홈페이지를 소개합니다.', img:'https://picsum.photos/seed/web1/480/280', tags:['홈페이지','리뉴얼'], likes:312, views:11400, regDate:'2026-04-14' },
+  { id:'cw02', type:'website', title:'온라인 쇼핑몰 오픈', url:'https://example.com', summary:'공식 온라인 스토어가 오픈했습니다.', img:'https://picsum.photos/seed/web2/480/280', tags:['쇼핑몰','오픈'], likes:245, views:8900, regDate:'2026-04-11' },
+  { id:'cw03', type:'website', title:'파트너 포털 안내', url:'https://example.com', summary:'협력사 전용 파트너 포털을 안내합니다.', img:'https://picsum.photos/seed/web3/480/280', tags:['파트너','포털'], likes:156, views:5600, regDate:'2026-04-09' },
+  { id:'cw04', type:'website', title:'채용 페이지 업데이트', url:'https://example.com', summary:'2026년 하반기 채용 정보를 업데이트했습니다.', img:'https://picsum.photos/seed/web4/480/280', tags:['채용','커리어'], likes:198, views:7200, regDate:'2026-04-07' },
+  { id:'cw05', type:'website', title:'고객 지원 센터', url:'https://example.com', summary:'FAQ와 1:1 문의를 이용할 수 있습니다.', img:'https://picsum.photos/seed/web5/480/280', tags:['고객지원','FAQ'], likes:134, views:4800, regDate:'2026-04-04' },
+  { id:'cw06', type:'website', title:'IR 정보 페이지', url:'https://example.com', summary:'투자자를 위한 IR 자료를 공개합니다.', img:'https://picsum.photos/seed/web6/480/280', tags:['IR','투자'], likes:89, views:3200, regDate:'2026-04-02' },
+  { id:'cw07', type:'website', title:'지속가능경영 보고서', url:'https://example.com', summary:'2025 지속가능경영 보고서를 발간했습니다.', img:'https://picsum.photos/seed/web7/480/280', tags:['ESG','보고서'], likes:167, views:6100, regDate:'2026-03-30' },
+  { id:'cw08', type:'website', title:'이벤트 랜딩 페이지', url:'https://example.com', summary:'봄맞이 특별 이벤트 페이지를 오픈했습니다.', img:'https://picsum.photos/seed/web8/480/280', tags:['이벤트','프로모션'], likes:378, views:13500, regDate:'2026-03-27' },
 ]
 
 const inputCls = 'w-full px-3 py-2 rounded-lg border border-[var(--border-default)] bg-[var(--bg-surface)] text-sm text-[var(--text-primary)] focus:border-primary-500 outline-none transition-colors'
