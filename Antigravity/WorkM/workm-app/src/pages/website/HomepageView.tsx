@@ -490,6 +490,12 @@ function SolutionPage({ solId, siteName, onBack }: { solId: string; siteName: st
       case 'franchise': case 'workshop': case 'venue': {
         return <ApplicationSolutionView solId={solId} accent={accentColor} />
       }
+      case 'media': case 'gallery': {
+        return <MediaSolutionView accent={accentColor} />
+      }
+      case 'content': {
+        return <ContentSolutionView accent={accentColor} />
+      }
       default:
         return <p style={{ color: '#94a3b8', textAlign: 'center', padding: '60px 0', fontSize: 14 }}>해당 솔루션 페이지를 준비 중입니다.</p>
     }
@@ -732,11 +738,20 @@ function ApplicationSolutionView({ solId, accent }: { solId: string; accent: str
   const [expandedId, setExpandedId] = useState<string | null>(null)
   const [submitted, setSubmitted] = useState(false)
 
-  const extraOptions = solId === 'workshop'
-    ? ['명찰', '다과세트', '식당', '특강']
-    : solId === 'venue'
-      ? ['빔프로젝터', '마이크세트', '화이트보드', '다과']
-      : ['인테리어 자문', '마케팅 지원', '시설 점검', '교육 프로그램']
+  /* 관리자 준비물관리에서 설정한 리스트를 추가선택사항으로 사용 */
+  const extraOptions = (() => {
+    const allItems = getLS<any[]>('ws_items', [])
+    const typeItems = allItems.filter((it: any) => it.type === wsType)
+    const allPreps = typeItems.flatMap((it: any) => it.prepList || [])
+    const uniquePreps = [...new Set(allPreps)] as string[]
+    if (uniquePreps.length > 0) return uniquePreps
+    // 펴백: 관리자가 설정한 준비물이 없으면 기본값
+    return solId === 'workshop'
+      ? ['명찰', '다과세트', '식당', '특강']
+      : solId === 'venue'
+        ? ['빔프로젝터', '마이크세트', '화이트보드', '다과']
+        : []
+  })()
 
   const toggleExtra = (e: string) => {
     setForm(f => ({
@@ -891,6 +906,12 @@ function ApplicationSolutionView({ solId, accent }: { solId: string; accent: str
                       placeholder="최소 10명" style={inputStyle} />
                   </div>
                 </div>
+                {/* 이메일 */}
+                <div style={{ marginBottom: 16 }}>
+                  <label style={labelStyle}>담당자 이메일</label>
+                  <input value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
+                    placeholder="example@email.com" style={inputStyle} />
+                </div>
                 {/* 담당자 / 비밀번호 */}
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
                   <div>
@@ -1023,6 +1044,210 @@ function ApplicationSolutionView({ solId, accent }: { solId: string; accent: str
               담당자 이름과 비밀번호로 조회해 주세요.
             </p>
           )}
+        </div>
+      )}
+    </div>
+  )
+}
+
+/* ═══════════════════════════════════
+   미디어 솔루션 뷰 (갤러리 + 검색)
+   ═══════════════════════════════════ */
+function MediaSolutionView({ accent }: { accent: string }) {
+  const [items] = useState<any[]>(() => getLS<any[]>('med_items', []))
+  const [search, setSearch] = useState('')
+  const [filter, setFilter] = useState<'all'|'image'|'video'>('all')
+  const [selectedItem, setSelectedItem] = useState<any>(null)
+
+  const filtered = items.filter(it => {
+    if (filter !== 'all' && it.mediaType !== filter) return false
+    if (search) {
+      const kw = search.toLowerCase()
+      return (it.title + ' ' + (it.tags||[]).join(' ') + ' ' + it.desc).toLowerCase().includes(kw)
+    }
+    return true
+  }).sort((a, b) => new Date(b.regDate).getTime() - new Date(a.regDate).getTime())
+
+  return (
+    <div>
+      {/* 검색 + 필터 */}
+      <div style={{ display: 'flex', gap: 10, marginBottom: 20, flexWrap: 'wrap', alignItems: 'center' }}>
+        <div style={{ flex: 1, minWidth: 200, position: 'relative' }}>
+          <Search size={14} style={{ position: 'absolute', left: 12, top: '50%', transform: 'translateY(-50%)', color: '#94a3b8' }} />
+          <input value={search} onChange={e => setSearch(e.target.value)}
+            placeholder="제목, 태그 검색..."
+            style={{ width: '100%', padding: '10px 14px 10px 34px', borderRadius: 10, border: '1.5px solid #e2e8f0', background: '#fff', fontSize: 14, outline: 'none' }} />
+        </div>
+        <div style={{ display: 'flex', gap: 6 }}>
+          {[
+            { k: 'all' as const, l: '전체' },
+            { k: 'image' as const, l: '이미지' },
+            { k: 'video' as const, l: '동영상' },
+          ].map(f => (
+            <button key={f.k} onClick={() => setFilter(f.k)} style={{
+              padding: '7px 14px', borderRadius: 20, fontSize: 12, fontWeight: 700,
+              border: `1.5px solid ${filter === f.k ? accent : '#e2e8f0'}`,
+              background: filter === f.k ? accent : '#fff',
+              color: filter === f.k ? '#fff' : '#64748b', cursor: 'pointer',
+            }}>{f.l}</button>
+          ))}
+        </div>
+        <span style={{ fontSize: 12, color: '#94a3b8', marginLeft: 'auto' }}>총 {filtered.length}건</span>
+      </div>
+
+      {/* 리스트 */}
+      {filtered.length === 0 ? (
+        <p style={{ color: '#94a3b8', textAlign: 'center', padding: '40px 0' }}>등록된 미디어가 없습니다.</p>
+      ) : (
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 14 }}>
+          {filtered.map(it => (
+            <div key={it.id} onClick={() => setSelectedItem(selectedItem?.id === it.id ? null : it)} style={{
+              borderRadius: 14, border: '1.5px solid #e2e8f0', background: '#fff',
+              overflow: 'hidden', cursor: 'pointer', transition: 'box-shadow .2s, transform .2s',
+            }}
+            onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = '0 8px 24px rgba(0,0,0,.08)'; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)' }}
+            onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = 'none'; (e.currentTarget as HTMLDivElement).style.transform = 'none' }}
+            >
+              <div style={{ width: '100%', aspectRatio: '4/3', overflow: 'hidden', background: '#f1f5f9', position: 'relative' }}>
+                <img src={it.dataUrl} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+                {it.mediaType === 'video' && (
+                  <div style={{ position: 'absolute', top: 8, left: 8, width: 24, height: 24, borderRadius: '50%', background: '#ef4444', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10 }}>▶</div>
+                )}
+              </div>
+              <div style={{ padding: 12 }}>
+                <div style={{ fontSize: 14, fontWeight: 700, color: '#1e293b', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{it.title}</div>
+                {it.desc && <div style={{ fontSize: 12, color: '#94a3b8', marginTop: 3, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{it.desc}</div>}
+                {it.tags?.length > 0 && (
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4, marginTop: 6 }}>
+                    {it.tags.slice(0, 3).map((t: string) => (
+                      <span key={t} style={{ padding: '2px 6px', borderRadius: 4, fontSize: 10, fontWeight: 700, background: `${accent}15`, color: accent }}>#{t}</span>
+                    ))}
+                  </div>
+                )}
+                <div style={{ fontSize: 11, color: '#94a3b8', marginTop: 4 }}>{it.regDate}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* 선택된 미디어 상세 */}
+      {selectedItem && (
+        <div style={{
+          marginTop: 20, padding: 20, borderRadius: 14, border: '1.5px solid #e2e8f0',
+          background: '#fafbfc',
+        }}>
+          <img src={selectedItem.dataUrl} alt="" style={{ width: '100%', maxHeight: 500, objectFit: 'contain', borderRadius: 10, marginBottom: 14 }} />
+          <h3 style={{ fontSize: 18, fontWeight: 700, color: '#1e293b', margin: '0 0 6px' }}>{selectedItem.title}</h3>
+          {selectedItem.desc && <p style={{ fontSize: 14, color: '#475569', lineHeight: 1.7, margin: 0 }}>{selectedItem.desc}</p>}
+        </div>
+      )}
+    </div>
+  )
+}
+
+/* ═══════════════════════════════════
+   컨텐츠 솔루션 뷰 (리스트 + 검색)
+   ═══════════════════════════════════ */
+function ContentSolutionView({ accent }: { accent: string }) {
+  const [items] = useState<any[]>(() => getLS<any[]>('chub_items', []))
+  const [search, setSearch] = useState('')
+  const [catFilter, setCatFilter] = useState('all')
+  const [expandedId, setExpandedId] = useState<string | null>(null)
+
+  const categories = ['all', ...new Set(items.map((it: any) => it.category).filter(Boolean))]
+  const catLabels: Record<string, string> = { all: '전체', news: '뉴스', blog: '블로그', youtube: 'YouTube', website: '웹사이트' }
+
+  const filtered = items.filter(it => {
+    if (catFilter !== 'all' && it.category !== catFilter) return false
+    if (search) {
+      const kw = search.toLowerCase()
+      return (it.title + ' ' + (it.summary || '') + ' ' + (it.tags || []).join(' ')).toLowerCase().includes(kw)
+    }
+    return true
+  }).sort((a, b) => new Date(b.date || b.regDate || 0).getTime() - new Date(a.date || a.regDate || 0).getTime())
+
+  const catColors: Record<string, string> = { news: '#ef4444', blog: '#3b82f6', youtube: '#f59e0b', website: '#22c55e' }
+
+  return (
+    <div>
+      {/* 검색 + 카테고리 */}
+      <div style={{ display: 'flex', gap: 10, marginBottom: 20, flexWrap: 'wrap', alignItems: 'center' }}>
+        <div style={{ flex: 1, minWidth: 200, position: 'relative' }}>
+          <Search size={14} style={{ position: 'absolute', left: 12, top: '50%', transform: 'translateY(-50%)', color: '#94a3b8' }} />
+          <input value={search} onChange={e => setSearch(e.target.value)}
+            placeholder="제목, 요약, 태그 검색..."
+            style={{ width: '100%', padding: '10px 14px 10px 34px', borderRadius: 10, border: '1.5px solid #e2e8f0', background: '#fff', fontSize: 14, outline: 'none' }} />
+        </div>
+        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+          {categories.map(c => (
+            <button key={c} onClick={() => setCatFilter(c)} style={{
+              padding: '7px 14px', borderRadius: 20, fontSize: 12, fontWeight: 700,
+              border: `1.5px solid ${catFilter === c ? accent : '#e2e8f0'}`,
+              background: catFilter === c ? accent : '#fff',
+              color: catFilter === c ? '#fff' : '#64748b', cursor: 'pointer',
+            }}>{catLabels[c] || c}</button>
+          ))}
+        </div>
+        <span style={{ fontSize: 12, color: '#94a3b8', marginLeft: 'auto' }}>총 {filtered.length}건</span>
+      </div>
+
+      {/* 리스트 */}
+      {filtered.length === 0 ? (
+        <p style={{ color: '#94a3b8', textAlign: 'center', padding: '40px 0' }}>등록된 컨텐츠가 없습니다.</p>
+      ) : (
+        <div style={{ border: '1px solid #e2e8f0', borderRadius: 14, overflow: 'hidden' }}>
+          {filtered.map((it, i) => {
+            const isOpen = expandedId === it.id
+            const cc = catColors[it.category] || '#94a3b8'
+            return (
+              <div key={it.id}>
+                <div onClick={() => setExpandedId(isOpen ? null : it.id)} style={{
+                  display: 'flex', alignItems: 'center', gap: 12, padding: '13px 16px',
+                  borderBottom: '1px solid #f1f5f9', cursor: 'pointer',
+                  background: isOpen ? '#f8fafc' : 'transparent', transition: 'background .15s',
+                }}>
+                  {it.thumbnail && (
+                    <div style={{ width: 48, height: 48, borderRadius: 8, overflow: 'hidden', background: '#f1f5f9', flexShrink: 0 }}>
+                      <img src={it.thumbnail} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+                    </div>
+                  )}
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 2 }}>
+                      <span style={{ padding: '2px 8px', borderRadius: 6, fontSize: 10, fontWeight: 700, background: `${cc}18`, color: cc }}>{catLabels[it.category] || it.category}</span>
+                      <span style={{ fontSize: 14, fontWeight: 600, color: '#1e293b', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{it.title}</span>
+                    </div>
+                    <div style={{ fontSize: 11, color: '#94a3b8' }}>{it.date || it.regDate || ''}</div>
+                  </div>
+                  <span style={{ color: '#94a3b8', fontSize: 18, transition: 'transform .2s', transform: isOpen ? 'rotate(180deg)' : 'rotate(0)' }}>▾</span>
+                </div>
+                {isOpen && (
+                  <div style={{ padding: '16px 20px', borderBottom: '1px solid #e2e8f0', background: '#fafbfc' }}>
+                    {it.summary && <p style={{ fontSize: 14, lineHeight: 1.7, color: '#475569', margin: 0 }}>{it.summary}</p>}
+                    {it.thumbnail && (
+                      <div style={{ marginTop: 12 }}>
+                        <img src={it.thumbnail} alt="" style={{ maxWidth: '100%', borderRadius: 10, border: '1px solid #e2e8f0' }} />
+                      </div>
+                    )}
+                    {it.url && (
+                      <a href={it.url.startsWith('http') ? it.url : `https://${it.url}`}
+                        target="_blank" rel="noopener noreferrer"
+                        style={{ display: 'inline-block', marginTop: 12, padding: '8px 16px', borderRadius: 8, background: accent, color: '#fff', fontSize: 13, fontWeight: 700, textDecoration: 'none' }}>
+                        원본 보기
+                      </a>
+                    )}
+                    {it.tags?.length > 0 && (
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4, marginTop: 12 }}>
+                        {it.tags.map((t: string) => (
+                          <span key={t} style={{ padding: '2px 8px', borderRadius: 6, fontSize: 10, fontWeight: 700, background: `${accent}15`, color: accent }}>#{t}</span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            )
+          })}
         </div>
       )}
     </div>
